@@ -1,0 +1,36 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <!--name:模型的全名称
+        table:数据库表名-->
+    <class name="cn.yb.hibernate.domain.User" table="t_user">
+        <!--name：模型的属性名
+            column：对应数据库表的列名-->
+        <id name="uid" column="id">
+            <!--generator：id生成策略
+                native：如果是mysql数据库，id会自增
+                increment：也会自动增长id,但是它的这种增长是Hibernate自己实现的
+                    它会执行select max(id) 查询，这种会有线程并发问题
+                hilo:hibernate自己实现的id规则【不用,不用学】
+                native:【经常常用】
+                    如果是mysql数据库，id会自动增长
+                    如果是oracle数据库，会自动增长，与sequence相关
+                uuid:【经常常用】一个长字符串,需要把模型的id改成字符串
+                     保存的时候，不用自己设置ID,hibernate会设置id
+                assigned:【经常常用】要手动设置id属性
+                -->
+            <generator class="native"></generator>
+        </id>
+        <!--如果模型属性和数据库列名一样，column可以不用写-->
+        <property name="username" type="string" length="16"/>
+        <property name="password" length="6"/>
+        <!--Date：在property中不写type，数据库对应类型是datetime【年月日时分秒】
+                  type写date，数据库对应类型为date【年月日】
+                  type写time，数据库对应类型为time【时分秒】
+                  type写timestamp，数据库对应类型为timestamp
+                    如果要用时间戳，建议用long-->
+        <property name="birthday" type="timestamp"/>
+    </class>
+</hibernate-mapping>

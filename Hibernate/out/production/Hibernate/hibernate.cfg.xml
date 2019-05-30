@@ -1,0 +1,37 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- 1、配置数据库连接的4个参数 -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql:///hibernate01</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">123456</property>
+
+        <!--  是否显示sql语句 -->
+        <property name="show_sql">true</property>
+        <!--  是否格式化sql语句 -->
+        <property name="format_sql">true</property>
+        <!--  是否自动提交事务：针对insert有效，delete无效 -->
+        <property name="hibernate.connection.autocommit">true</property>
+        <!--配置开启与当前线程绑定session的功能-->
+        <property name="current_session_context_class">thread</property>
+        <!--配置映射文件与数据库的关系
+            update：如果数据库没有表，会自动创建表
+                    如果与数据库字段不一样，会更新数据库
+            create：每次启动hibernate都帮你创建表
+            create-drop：每次启动hibernate都帮你创建表，执行完后删除表
+            validate:检验hbm文件，如果与数据库字段不一样则抛出异常-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!--配置数据库方言：指定用哪种数据库语言
+            mysql分页：limit
+            oracle分页：rownum-->
+        <!--<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>-->
+
+        <!-- 2、配置JavaBean与表的映射文件 -->
+        <mapping resource="cn/yb/hibernate/domain/User.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>

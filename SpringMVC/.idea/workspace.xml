@@ -11,127 +11,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b44f3b00-7f71-4cf0-af7c-fbfc3b53e30a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMVC_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/DispatcherServlet-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/META-INF/SpringMVC.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/model/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/model/StudentList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/model/UserExt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/AnotherC_ForwardandRedirect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/C_ForwardandRedirect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/C_PageEcho.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/C_RequestParam_Anno.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/C_ResponseBodyandRequestBody.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/C_UseAnnotation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/C_getRequestParams.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/CommandController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/HttpController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/StudentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/UserAddController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/classes/cn/yb/springmvc/web/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/com.springsource.org.apache.log4j-1.2.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-aop-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-aspects-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-beans-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-context-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-context-support-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-core-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-expression-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-jdbc-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-orm-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-oxm-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-test-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-tx-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-web-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/lib/spring-webmvc-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/views/stu/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/views/stu/stuAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/views/user/info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/views/user/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/views/user/userAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/views/user/userEdit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/views/user/userList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringMVC_war_exploded/js/jquery-1.8.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/META-INF/SpringMVC.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/model/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/model/StudentList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/model/UserExt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/AnotherC_ForwardandRedirect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/C_ForwardandRedirect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/C_PageEcho.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/C_RequestParam_Anno.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/C_ResponseBodyandRequestBody.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/C_UseAnnotation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/C_getRequestParams.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/CommandController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/HttpController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/StudentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/UserAddController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SpringMVC/cn/yb/springmvc/web/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/model/UserExt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/AnotherC_ForwardandRedirect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/C_ForwardandRedirect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/C_PageEcho.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/C_RequestParam_Anno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/C_ResponseBodyandRequestBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/C_UseAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/C_getRequestParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/CommandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/HttpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/UserAddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/DispatcherServlet-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/com.springsource.org.apache.log4j-1.2.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-aspects-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-context-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-context-support-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-core-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-orm-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-oxm-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-test-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-web-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-3.2.0.RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/stu/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/stu/stuAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/user/info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/user/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/user/userAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/user/userEdit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/user/userList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery-1.8.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/artifacts/Hibernate_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/dataSources/ee72a7f9-2a4e-4a28-9c22-a189511e900e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/Hibernate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/domain/User.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/gettingStart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testSQLQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testSession$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testSession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testSessionAPI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testTransaction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/utils/HibernateUtils$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/utils/HibernateUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/domain/User.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/gettingStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testSQLQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testSessionAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/utils/HibernateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/src/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/antlr-2.7.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/commons-collections-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/dom4j-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/hibernate3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/javassist-3.12.0.GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/jta-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/junit-4.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/slf4j-api-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -221,7 +153,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="368" />
     <option name="y" value="144" />
     <option name="width" value="1548" />
@@ -233,32 +165,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,14 +184,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/gitRepository" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -410,12 +324,21 @@
       <workItem from="1558531154754" duration="565000" />
       <workItem from="1558571724467" duration="1292000" />
       <workItem from="1558605248913" duration="10000" />
-      <workItem from="1559133247602" duration="787000" />
+      <workItem from="1559133247602" duration="1561000" />
+      <workItem from="1559135282668" duration="68000" />
     </task>
+    <task id="LOCAL-00001" summary="SpringMVC_gettingStart">
+      <created>1559134104840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559134104840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81710000" />
+    <option name="totallyTimeSpent" value="82552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,7 +350,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="738" y="123" width="1548" height="901" extended-state="0" />
+    <frame x="368" y="144" width="1548" height="901" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -435,7 +359,7 @@
       <window_info id="Favorites" order="3" sideWeight="0.5007133" side_tool="true" weight="0.2569395" />
       <window_info id="Web" order="4" sideWeight="0.5007133" side_tool="true" weight="0.2569395" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.44384304" visible="true" weight="0.26209676" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.44384304" visible="true" weight="0.26545697" />
       <window_info id="Structure" order="7" sideWeight="0.556157" side_tool="true" weight="0.24865592" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32952926" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32952926" />
@@ -444,7 +368,7 @@
       <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49832103" weight="0.21610738" />
       <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.32952926" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32984293" />
       <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.49966422" weight="0.32746956" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" sideWeight="0.49899262" weight="0.32867134" />
@@ -466,6 +390,13 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="D:/gitRepository" />
+    </ignored-roots>
+    <MESSAGE value="SpringMVC_gettingStart" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC_gettingStart" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
