@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676d41ef-ceb7-49aa-8c12-66b8767ad7f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ee72a7f9-2a4e-4a28-9c22-a189511e900e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/domain/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/domain/User.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/gettingStart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testQuery.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testSQLQuery.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testSession$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testSession.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testSessionAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testTransaction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/utils/HibernateUtils$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/utils/HibernateUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Hibernate/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,57 +32,47 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testCriteria.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1694">
-              <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="130" column="30" lean-forward="true" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.42736357">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="88">
+                  <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Order.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#209#216#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,6 +105,8 @@
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/domain/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testStatus.java" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java" />
+        <option value="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.java" />
+        <option value="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Order.java" />
       </list>
     </option>
   </component>
@@ -145,8 +124,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="536" />
-    <option name="y" value="175" />
+    <option name="x" value="561" />
+    <option name="y" value="181" />
     <option name="width" value="1361" />
     <option name="height" value="859" />
   </component>
@@ -175,6 +154,13 @@
               <item name="Hibernate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,7 +349,7 @@
       <workItem from="1559126105837" duration="1242000" />
       <workItem from="1559128686301" duration="178000" />
       <workItem from="1559128916601" duration="9584000" />
-      <workItem from="1559184196726" duration="272000" />
+      <workItem from="1559184196726" duration="1159000" />
     </task>
     <task id="LOCAL-00001" summary="Hibernate">
       <created>1559184455081</created>
@@ -372,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559184455081</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Hibernate">
+      <created>1559184534677</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559184534677</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -408,10 +401,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26051000" />
+    <option name="totallyTimeSpent" value="26938000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="536" y="175" width="1361" height="859" extended-state="0" />
+    <frame x="561" y="181" width="1361" height="859" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Persistence" order="0" side_tool="true" />
@@ -420,7 +413,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.16910069" />
+      <window_info content_ui="combo" id="Project" order="6" weight="0.16910069" />
       <window_info id="Designer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3296433" />
@@ -456,20 +449,20 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.16679478" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.16910069" />
       <window_info id="Designer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3296433" />
       <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32825485" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32963988" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.4764543" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.3961219" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -482,7 +475,7 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.32974634" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout-to-restore>
   </component>
@@ -652,16 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -670,6 +653,30 @@
             <element signature="imports" expanded="true" />
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
