@@ -32,6 +32,10 @@
 
         <!-- 2、配置JavaBean与表的映射文件 -->
         <mapping resource="cn/yb/hibernate/domain/User.hbm.xml"/>
+        <mapping resource="cn/yb/hibernate/domain/Order.hbm.xml"/>
+        <mapping resource="cn/yb/hibernate/domain/Customer.hbm.xml"/>
+        <mapping resource="cn/yb/hibernate/domain/Student.hbm.xml"/>
+        <mapping resource="cn/yb/hibernate/domain/Course.hbm.xml"/>
 
     </session-factory>
 </hibernate-configuration>

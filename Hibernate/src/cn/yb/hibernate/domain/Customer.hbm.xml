@@ -1,0 +1,36 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.yb.hibernate.domain.Customer" table="t_customer">
+        <id name="id" column="id">
+            <generator class="native"></generator>
+        </id>
+        <!--如果模型属性和数据库列名一样，column可以不用写-->
+        <property name="name"/>
+
+        <!--描述一对多关系
+            key中column写的是外键
+            one-to-many的class写的是多的一方
+            set中inverse：默认为false表示当前方维护外键关系
+            set中cascade:级联
+                save-update：保存A(客户)时，同时保存B(订单)
+                delete：删除A(客户)时，同时删除B(订单)
+                delete-orphan：孤儿删除，解除关系，删除B（儿子），A（父亲）存在
+            级联的组合：
+                如果需要配置多项，使用逗号分隔。<set cascade="save-update,delete">
+                all : save-update 和 delete 整合
+                all-delete-orphan : 三个整合
+            set中batch-size="4"：一次查询几条数据-->
+        <set name="orders" cascade="all-delete-orphan">
+            <key column="customer_id"></key>
+            <one-to-many class="cn.yb.hibernate.domain.Order"/>
+        </set>
+
+        <!--HQL写在类标签中【局部的】-->
+        <query name="hql1">from Customer</query>
+    </class>
+    <!--HQL写在hibernate-mapping标签中【全局的】-->
+    <query name="hql2">from Customer where name = ?</query>
+</hibernate-mapping>

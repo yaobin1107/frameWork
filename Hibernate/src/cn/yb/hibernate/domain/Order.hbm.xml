@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.yb.hibernate.domain.Order" table="t_order">
+        <id name="id" column="id">
+            <generator class="native"></generator>
+        </id>
+        <!--如果模型属性和数据库列名一样，column可以不用写-->
+        <property name="name"/>
+
+        <!--描述多对一关系
+            many-to-one中column写的是外键
+                         name写一的一方
+                         class写对应类-->
+        <!--多对一加载策略lazy有三个选项
+            false：即时加载
+            proxy：使用代理，根据类级别加载策略来决定，还要依赖fecth
+            no-proxy：不代理-->
+        <!--多种情况：
+            class:lazy       mto:lazy      mto:fecth
+              false           proxy          join       order和customer都是即时加载，一条SQL【左外连接】
+              false           proxy         select      order是即时加载，customer是懒加载，两条SQL
+              true            proxy          join       order是懒加载，customer是即时加载，一条SQL【左外连接】
+              true            proxy         select      order和customer都是懒加载，两条SQL
+        -->
+        <many-to-one name="customer" class="cn.yb.hibernate.domain.Customer" column="customer_id"/>
+    </class>
+</hibernate-mapping>

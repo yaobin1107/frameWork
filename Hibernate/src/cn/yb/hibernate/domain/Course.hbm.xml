@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.yb.hibernate.domain.Course" table="t_course">
+        <id name="cid" column="id">
+            <generator class="native"></generator>
+        </id>
+        <!--如果模型属性和数据库列名一样，column可以不用写-->
+        <property name="name"/>
+
+        <!--
+            set中table：中间表表明
+            key中column：写中间表当前模型的外键名
+            many-to-many的class：写对应模型的类名
+            many-to-many的column：写中间表另一个模型的外键名-->
+        <set name="students" table="t_student_course" inverse="true">
+            <key column="cid"></key>
+            <many-to-many class="cn.yb.hibernate.domain.Student" column="sid"/>
+        </set>
+    </class>
+</hibernate-mapping>
