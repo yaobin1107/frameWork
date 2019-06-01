@@ -7,6 +7,17 @@ public class Customer {
     private Integer id;
     private String name;//客户名称
 
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
+    /*乐观锁版本字段，int类型*/
+    private Integer version;
+
     @Override
     public String toString() {
         return "Customer{" +

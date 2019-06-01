@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.yb.hibernate.domain.Address" table="t_address">
+        <id name="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="name"/>
+        <!--一个地址对应一个公司：这是一种特殊的多对一
+            column：外键名
+            unique：是否唯一
+        -->
+        <many-to-one name="company" column="company_id" unique="true"/>
+    </class>
+</hibernate-mapping>

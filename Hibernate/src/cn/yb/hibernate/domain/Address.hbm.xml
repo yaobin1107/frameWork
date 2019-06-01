@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.yb.hibernate.domain.Address" table="t_address">
+        <id name="id">
+            <!--主键又是外键-->
+            <generator class="foreign">
+                <param name="property">company</param>
+            </generator>
+        </id>
+        <property name="name"/>
+        <!--一个地址对应一个公司：一对一关系，主键就是外键-->
+        <one-to-one name="company" class="cn.yb.hibernate.domain.Company" constrained="true"/>
+    </class>
+</hibernate-mapping>

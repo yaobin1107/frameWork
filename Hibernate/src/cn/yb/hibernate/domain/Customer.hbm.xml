@@ -7,6 +7,10 @@
         <id name="id" column="id">
             <generator class="native"></generator>
         </id>
+
+        <!--版本控制配置：放在id和property之间-->
+        <version name="version"/>
+
         <!--如果模型属性和数据库列名一样，column可以不用写-->
         <property name="name"/>
 

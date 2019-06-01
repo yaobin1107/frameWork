@@ -10,6 +10,32 @@
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">123456</property>
 
+        <!--配置c3p0
+        #hibernate.c3p0.max_size 2
+        #hibernate.c3p0.min_size 2
+        #hibernate.c3p0.timeout 5000
+        #hibernate.c3p0.max_statements 100
+        #hibernate.c3p0.idle_test_period 3000
+        #hibernate.c3p0.acquire_increment 2
+        #hibernate.c3p0.validate false
+        -->
+        <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+        <property name="hibernate.c3p0.max_size">2</property>
+        <property name="hibernate.c3p0.min_size">2</property>
+        <property name="hibernate.c3p0.timeout">5000</property>
+        <property name="hibernate.c3p0.max_statements">100</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+        <property name="hibernate.c3p0.acquire_increment">2</property>
+        <property name="hibernate.c3p0.validate">false</property>
+
+        <!--配置事务隔离级别
+            1.读未提交
+            2.读已提交
+            4.可重复读
+            8.串行化
+        -->
+        <property name="hibernate.connection.isolation">4</property>
+
         <!--  是否显示sql语句 -->
         <property name="show_sql">true</property>
         <!--  是否格式化sql语句 -->
@@ -36,6 +62,8 @@
         <mapping resource="cn/yb/hibernate/domain/Customer.hbm.xml"/>
         <mapping resource="cn/yb/hibernate/domain/Student.hbm.xml"/>
         <mapping resource="cn/yb/hibernate/domain/Course.hbm.xml"/>
+        <mapping resource="cn/yb/hibernate/domain/Company.hbm.xml"/>
+        <mapping resource="cn/yb/hibernate/domain/Address.hbm.xml"/>
 
     </session-factory>
 </hibernate-configuration>

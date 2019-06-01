@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.yb.hibernate.domain.Company" table="t_company">
+        <id name="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="name"/>
+
+        <!--一个公司只有一个地址-->
+        <one-to-one name="address" class="cn.yb.hibernate.domain.Address"/>
+    </class>
+</hibernate-mapping>
