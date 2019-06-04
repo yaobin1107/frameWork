@@ -238,6 +238,9 @@ public class testCache {
 
     /**
      * 时间戳缓存：两次连续执行的操作相同时，不在查询数据库
+     * update
+     * update
+     * select
      */
     @Test
     public void test11() {
