@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676d41ef-ceb7-49aa-8c12-66b8767ad7f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.hbm外键.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Company.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/test/testLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/test/testLog4j.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/test/testOneToOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/log4j-1.2.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-log4j12-1.7.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ee72a7f9-2a4e-4a28-9c22-a189511e900e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ee72a7f9-2a4e-4a28-9c22-a189511e900e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/backport-util-concurrent.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/ehcache-1.5.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hibernate/cn/yb/hibernate/test/testCache.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hibernate/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hibernate/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/yb/hibernate/test/testQBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/test/testQBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,57 +54,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testOneToOne.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+            <state relative-caret-position="164">
+              <caret line="239" column="17" selection-start-line="239" selection-start-column="17" selection-end-line="239" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Company.hbm.xml">
+        <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="340">
+              <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ehcache.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="132">
+              <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.hbm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.hbm外键.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -149,7 +119,6 @@
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testEntity.java" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/domain/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testStatus.java" />
-        <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testRelationship.java" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Course.hbm.xml" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testManytoMany.java" />
@@ -167,11 +136,13 @@
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testLog4j.java" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Company.java" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.java" />
-        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Company.hbm.xml" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.hbm.xml" />
         <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testOneToOne.java" />
+        <option value="$PROJECT_DIR$/src/ehcache.xml" />
+        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java" />
       </list>
     </option>
   </component>
@@ -189,8 +160,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="555" />
-    <option name="y" value="174" />
+    <option name="x" value="562" />
+    <option name="y" value="179" />
     <option name="width" value="1361" />
     <option name="height" value="859" />
   </component>
@@ -202,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,18 +217,10 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Hibernate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -270,7 +234,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/cn/yb/hibernate/domain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -280,17 +244,17 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\idea_frameWork\Hibernate\src\cn\yb\hibernate\domain" />
-      <recent name="D:\idea_frameWork\Hibernate\src" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\idea_frameWork\Hibernate\web\WEB-INF\lib" />
-      <recent name="D:\idea_frameWork\Hibernate\web\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.yb.hibernate.test" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea_frameWork\Hibernate\src" />
       <recent name="D:\idea_frameWork\Hibernate\web\WEB-INF\lib" />
+      <recent name="D:\idea_frameWork\Hibernate\src\cn\yb\hibernate\domain" />
+      <recent name="D:\idea_frameWork\Hibernate\web\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -305,8 +269,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testOneToOne.test2">
-    <configuration name="testLock.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.testCache.test11">
+    <configuration name="testCache.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hibernate" />
       <extension name="coverage">
         <pattern>
@@ -315,14 +279,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.yb.hibernate.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.yb.hibernate.test.testLock" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="cn.yb.hibernate.test.testCache" />
+      <option name="METHOD_NAME" value="test10" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testLock.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testCache.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hibernate" />
       <extension name="coverage">
         <pattern>
@@ -331,14 +295,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.yb.hibernate.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.yb.hibernate.test.testLock" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="MAIN_CLASS_NAME" value="cn.yb.hibernate.test.testCache" />
+      <option name="METHOD_NAME" value="test11" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testLog4j.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testCache.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hibernate" />
       <extension name="coverage">
         <pattern>
@@ -347,14 +311,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.yb.hibernate.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.yb.hibernate.test.testLog4j" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="cn.yb.hibernate.test.testCache" />
+      <option name="METHOD_NAME" value="test8" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testOneToOne.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testCache.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hibernate" />
       <extension name="coverage">
         <pattern>
@@ -363,8 +327,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.yb.hibernate.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.yb.hibernate.test.testOneToOne" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="cn.yb.hibernate.test.testCache" />
+      <option name="METHOD_NAME" value="test9" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -408,20 +372,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.Tomcat 7.0.94" />
-      <item itemvalue="JUnit.testLock.test2" />
-      <item itemvalue="JUnit.testLock.test3" />
-      <item itemvalue="JUnit.testLog4j.test1" />
-      <item itemvalue="JUnit.testOneToOne.test1" />
       <item itemvalue="JUnit.testOneToOne.test2" />
+      <item itemvalue="Tomcat Server.Tomcat 7.0.94" />
+      <item itemvalue="JUnit.testCache.test8" />
+      <item itemvalue="JUnit.testCache.test9" />
+      <item itemvalue="JUnit.testCache.test10" />
+      <item itemvalue="JUnit.testCache.test11" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.testCache.test11" />
+        <item itemvalue="JUnit.testCache.test10" />
+        <item itemvalue="JUnit.testCache.test9" />
+        <item itemvalue="JUnit.testCache.test8" />
         <item itemvalue="JUnit.testOneToOne.test2" />
-        <item itemvalue="JUnit.testOneToOne.test1" />
-        <item itemvalue="JUnit.testLog4j.test1" />
-        <item itemvalue="JUnit.testLock.test3" />
-        <item itemvalue="JUnit.testLock.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -443,7 +407,8 @@
       <workItem from="1559184196726" duration="22117000" />
       <workItem from="1559272546520" duration="3867000" />
       <workItem from="1559293578034" duration="598000" />
-      <workItem from="1559356424492" duration="7901000" />
+      <workItem from="1559356424492" duration="8206000" />
+      <workItem from="1559608054499" duration="4346000" />
     </task>
     <task id="LOCAL-00001" summary="Hibernate">
       <created>1559184455081</created>
@@ -480,47 +445,53 @@
       <option name="project" value="LOCAL" />
       <updated>1559273894721</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="悲观乐观锁，一对一主外键配置">
+      <created>1559365320226</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559365320226</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testLock_test3 - 2019.06.01 at 11h 29m 14s.xml">
-      <configuration name="testLock.test3" configurationId="JUnit" />
+    <history-entry file="testCache_test8 - 2019.06.04 at 09h 05m 10s.xml">
+      <configuration name="testCache.test8" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testLock_test3 - 2019.06.01 at 11h 31m 17s.xml">
-      <configuration name="testLock.test3" configurationId="JUnit" />
+    <history-entry file="testCache_test9 - 2019.06.04 at 09h 08m 07s.xml">
+      <configuration name="testCache.test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testLog4j_test1 - 2019.06.01 at 12h 03m 38s.xml">
-      <configuration name="testLog4j.test1" configurationId="JUnit" />
+    <history-entry file="testCache_test9 - 2019.06.04 at 09h 14m 44s.xml">
+      <configuration name="testCache.test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testLog4j_test1 - 2019.06.01 at 12h 04m 28s.xml">
-      <configuration name="testLog4j.test1" configurationId="JUnit" />
+    <history-entry file="testCache_test9 - 2019.06.04 at 09h 15m 55s.xml">
+      <configuration name="testCache.test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testLog4j_test1 - 2019.06.01 at 12h 05m 15s.xml">
-      <configuration name="testLog4j.test1" configurationId="JUnit" />
+    <history-entry file="testCache_test9 - 2019.06.04 at 09h 16m 13s.xml">
+      <configuration name="testCache.test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testLog4j_test1 - 2019.06.01 at 12h 07m 11s.xml">
-      <configuration name="testLog4j.test1" configurationId="JUnit" />
+    <history-entry file="testCache_test9 - 2019.06.04 at 09h 16m 32s.xml">
+      <configuration name="testCache.test9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testOneToOne_test1 - 2019.06.01 at 12h 42m 19s.xml">
-      <configuration name="testOneToOne.test1" configurationId="JUnit" />
+    <history-entry file="testCache_test10 - 2019.06.04 at 09h 21m 45s.xml">
+      <configuration name="testCache.test10" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testOneToOne_test1 - 2019.06.01 at 12h 46m 19s.xml">
-      <configuration name="testOneToOne.test1" configurationId="JUnit" />
+    <history-entry file="testCache_test10 - 2019.06.04 at 09h 22m 25s.xml">
+      <configuration name="testCache.test10" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testOneToOne_test1 - 2019.06.01 at 12h 53m 59s.xml">
-      <configuration name="testOneToOne.test1" configurationId="JUnit" />
+    <history-entry file="testCache_test10 - 2019.06.04 at 09h 23m 49s.xml">
+      <configuration name="testCache.test10" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testOneToOne_test2 - 2019.06.01 at 12h 58m 07s.xml">
-      <configuration name="testOneToOne.test2" configurationId="JUnit" />
+    <history-entry file="testCache_test11 - 2019.06.04 at 09h 29m 29s.xml">
+      <configuration name="testCache.test11" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60262000" />
+    <option name="totallyTimeSpent" value="64913000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="556" y="188" width="1361" height="859" extended-state="0" />
-    <editor active="true" />
+    <frame x="562" y="179" width="1361" height="859" extended-state="0" />
     <layout>
       <window_info id="Persistence" order="0" side_tool="true" />
       <window_info id="Image Layers" order="1" />
@@ -528,7 +499,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.1867794" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1652575" />
       <window_info id="Designer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.24980783" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32963988" />
@@ -540,8 +511,8 @@
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32963988" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.5512465" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32963988" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.45429364" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -564,7 +535,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1867794" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1652575" />
       <window_info id="Designer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.24980783" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32963988" />
@@ -576,8 +547,8 @@
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32963988" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.42520776" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32963988" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.44459835" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -585,7 +556,7 @@
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32872927" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Database" order="2" weight="0.18985395" />
+      <window_info anchor="right" id="Database" order="2" weight="0.18908532" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
@@ -599,7 +570,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hibernate" />
+    <MESSAGE value="悲观乐观锁，一对一主外键配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="悲观乐观锁，一对一主外键配置" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/hibernate3.jar!/org/hibernate/ejb/InjectionSettingsFactory.class">
@@ -698,17 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="130" column="30" lean-forward="true" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,19 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testLock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -986,17 +934,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testOneToOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1452">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="186">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,16 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Company.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.hbm外键.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1024,13 +958,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testOneToOne.java">
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Address.hbm外键.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Company.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/domain/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
-          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+          <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+          <folding>
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/hibernate/test/testCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="239" column="17" selection-start-line="239" selection-start-column="17" selection-end-line="239" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
     </entry>

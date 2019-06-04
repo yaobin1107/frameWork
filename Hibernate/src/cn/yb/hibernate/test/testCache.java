@@ -1,5 +1,7 @@
 package cn.yb.hibernate.test;
 
+import cn.yb.hibernate.domain.Company;
+import cn.yb.hibernate.domain.Customer;
 import cn.yb.hibernate.domain.User;
 import cn.yb.hibernate.utils.HibernateUtils;
 import org.hibernate.Query;
@@ -132,5 +134,129 @@ public class testCache {
 
         //session.getTransaction().commit();
         session.close();
+    }
+
+
+    @Test
+    public void test7() {
+        //1.创建session
+        Session session = HibernateUtils.openSession();
+        //session.getTransaction().begin();
+
+        //读取数据后，会把Company存在session中
+        Company company = (Company) session.get(Company.class, 1);
+        System.out.println(company.getName());
+        //再次读取不会再执行select语句
+        //清除session缓存后，再次查询需要查询数据库
+        session.clear();
+
+        Company company1 = (Company) session.get(Company.class, 1);
+        System.out.println(company1.getName());
+
+        //session.getTransaction().commit();
+        session.close();
+    }
+
+    /**
+     * 二级缓存测试
+     * 类缓存
+     */
+    @Test
+    public void test8() {
+        //1.创建session
+        Session session1 = HibernateUtils.openSession();
+        Session session2 = HibernateUtils.openSession();
+        //session.getTransaction().begin();
+
+        //获取数据，默认放在一级缓存session缓存
+        Customer customer = (Customer) session1.get(Customer.class, 1);
+        System.out.println(customer);
+        //清除缓存
+        session1.clear();
+
+        //在配置文件中配置了二级类缓存，session中清除后，会去类缓存中读取数据，所以只有一条select语句
+        Customer customer2 = (Customer) session1.get(Customer.class, 1);
+        System.out.println(customer2);
+
+        //另一个session获取数据
+        //在配置文件中配置了二级类缓存，session是同一个sessionFactory生产的，所以只有一条select语句
+        Customer customer3 = (Customer) session2.get(Customer.class, 1);
+        System.out.println(customer3);
+
+        //session.getTransaction().commit();
+        session1.close();
+        session2.close();
+    }
+
+    /**
+     * 二级缓存测试
+     * 集合缓存
+     */
+    @Test
+    public void test9() {
+        //1.创建session
+        Session session1 = HibernateUtils.openSession();
+        Session session2 = HibernateUtils.openSession();
+        //session.getTransaction().begin();
+
+        //获取数据，默认放在一级缓存session缓存
+        Customer customer = (Customer) session1.get(Customer.class, 1);
+        System.out.println(customer.getOrders());
+
+        session1.clear();
+
+        Customer customer2 = (Customer) session1.get(Customer.class, 1);
+        System.out.println(customer2.getOrders());
+
+        //session.getTransaction().commit();
+        session1.close();
+        session2.close();
+    }
+
+    /**
+     * 查询缓存：针对HQL，HQL相同不再查询
+     */
+    @Test
+    public void test10() {
+        //1.创建session
+        Session session1 = HibernateUtils.openSession();
+        Session session2 = HibernateUtils.openSession();
+        //session.getTransaction().begin();
+
+        Query query1 = session1.createQuery("from Customer ");
+        query1.setCacheable(true);//设置允许缓存
+        System.out.println(query1.list());
+
+        Query query2 = session2.createQuery("from Customer ");
+        query2.setCacheable(true);//设置允许缓存
+        System.out.println(query2.list());
+
+        //session.getTransaction().commit();
+        session1.close();
+        session2.close();
+    }
+
+    /**
+     * 时间戳缓存：两次连续执行的操作相同时，不在查询数据库
+     */
+    @Test
+    public void test11() {
+        //1.创建session
+        Session session1 = HibernateUtils.openSession();
+        session1.getTransaction().begin();
+
+        Customer customer = (Customer) session1.get(Customer.class,1);
+        System.out.println(customer);
+
+        session1.getTransaction().commit();
+        session1.close();
+
+
+        //另一个session获取数据
+        Session session2 = HibernateUtils.openSession();
+        Customer customer2 = (Customer) session2.get(Customer.class,1);
+        System.out.println(customer2);
+
+        session2.close();
     }
 }
