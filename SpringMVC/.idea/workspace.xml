@@ -153,9 +153,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="368" />
-    <option name="y" value="144" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="367" />
+    <option name="y" value="147" />
     <option name="width" value="1548" />
     <option name="height" value="901" />
   </component>
