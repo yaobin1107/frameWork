@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.yb.tieba.model.Reply" table="t_reply">
+        <id name="rid" column="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="replyContent"/>
+        <property name="ipAddr"/>
+        <property name="createDate"/>
+        <!--多对一：多个回复  属于 【一个主题】-->
+        <many-to-one name="topic" class="cn.yb.tieba.model.Topic" column="topic_id"/>
+    </class>
+</hibernate-mapping>
