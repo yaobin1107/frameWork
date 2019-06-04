@@ -241,6 +241,7 @@ public class testCache {
      * update
      * update
      * select
+     * 两次update只会执行一次update语句
      */
     @Test
     public void test11() {
