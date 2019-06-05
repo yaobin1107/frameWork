@@ -10,61 +10,7 @@
     <bookmark url="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-3.2.0.RC2.jar!/org/springframework/web/servlet/ModelAndView.class" description="public ModelAndView(String viewName) {" line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b44f3b00-7f71-4cf0-af7c-fbfc3b53e30a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/artifacts/Hibernate_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/dataSources/ee72a7f9-2a4e-4a28-9c22-a189511e900e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/Hibernate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/domain/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/domain/User.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/gettingStart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testQuery.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testSQLQuery.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testSession$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testSession.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testSessionAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/test/testTransaction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/utils/HibernateUtils$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/cn/yb/hibernate/utils/HibernateUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/out/production/Hibernate/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/domain/User.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/gettingStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testCriteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testSQLQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testSessionAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/test/testTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/cn/yb/hibernate/utils/HibernateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/src/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/antlr-2.7.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/commons-collections-3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/dom4j-1.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/hibernate3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/javassist-3.12.0.GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/jta-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/junit-4.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/lib/slf4j-api-1.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b44f3b00-7f71-4cf0-af7c-fbfc3b53e30a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +25,17 @@
     <favorites_list name="SpringMVC" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/AnotherC_ForwardandRedirect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,6 +92,7 @@
         <option value="$PROJECT_DIR$/src/cn/yb/springmvc/model/StudentList.java" />
         <option value="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/DispatcherServlet-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/AnotherC_ForwardandRedirect.java" />
       </list>
     </option>
   </component>
@@ -165,8 +122,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,10 +129,42 @@
               <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,6 +313,7 @@
       <workItem from="1558605248913" duration="10000" />
       <workItem from="1559133247602" duration="1561000" />
       <workItem from="1559135282668" duration="68000" />
+      <workItem from="1559629733674" duration="139000" />
     </task>
     <task id="LOCAL-00001" summary="SpringMVC_gettingStart">
       <created>1559134104840</created>
@@ -334,11 +322,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559134104840</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SpringMVC_gettingStart">
+      <created>1559629766120</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559629766120</updated>
+    </task>
+    <task id="LOCAL-00003" summary="SpringMVC_gettingStart">
+      <created>1559629839314</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559629839314</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82552000" />
+    <option name="totallyTimeSpent" value="82691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,7 +352,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="368" y="144" width="1548" height="901" extended-state="1" />
+    <frame x="367" y="147" width="1548" height="901" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -359,7 +361,7 @@
       <window_info id="Favorites" order="3" sideWeight="0.5007133" side_tool="true" weight="0.2569395" />
       <window_info id="Web" order="4" sideWeight="0.5007133" side_tool="true" weight="0.2569395" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.44384304" visible="true" weight="0.26545697" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.44384304" visible="true" weight="0.26881722" />
       <window_info id="Structure" order="7" sideWeight="0.556157" side_tool="true" weight="0.24865592" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32952926" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32952926" />
@@ -647,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/AnotherC_ForwardandRedirect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/C_ResponseBodyandRequestBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -730,6 +725,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/springmvc/web/controller/AnotherC_ForwardandRedirect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
