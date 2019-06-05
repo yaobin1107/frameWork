@@ -43,8 +43,6 @@ public class testLoad {
     public void test2() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
-
         Student student = (Student) session.get(Student.class, 2);
         /**
          * 1.默认情况下Student下的Course数据，只有访问的时候，才执行SQL
@@ -53,8 +51,6 @@ public class testLoad {
         Set<Course> courses = student.getCourses();
         System.out.println("=======================================");
         System.out.println(courses);
-
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -68,14 +64,17 @@ public class testLoad {
      */
     @Test
     public void test3() {
+        /**
+         * join
+         */
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
-
         Student student = (Student) session.get(Student.class, 2);
-        System.out.println(student.getCourses());
-
-        //session.getTransaction().commit();
+        System.out.println("学生姓名："+student.getName());
+        //遍历课程
+        for (Course cours : student.getCourses()) {
+            System.out.println(cours.getName());
+        }
         //4.关闭会话
         session.close();
     }
@@ -88,16 +87,12 @@ public class testLoad {
     public void test4() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
-
         Query query = session.createQuery("from Student ");
         List<Student> list = query.list();
         for (Student student : list) {
             System.out.println("学生姓名：" + student.getName());
             System.out.println("学生课程：" + student.getCourses());
         }
-
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }

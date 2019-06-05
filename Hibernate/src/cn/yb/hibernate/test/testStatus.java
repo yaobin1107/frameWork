@@ -42,7 +42,6 @@ public class testStatus {
         //获取数据，通过get方法可以获取一个持久态对象
         User user1 = (User) session.get(User.class, 2);
         System.out.println(user1);
-
         //清除session
         session.clear();
         /**
@@ -52,9 +51,9 @@ public class testStatus {
          * session.clear();
          * session.evict(Object o);清除指定对象的session缓存
          */
-        User user2 = (User) session.get(User.class, 2);//因为session没数据，所以要重新查询数据库
+        //因为session没数据，所以要重新查询数据库
+        User user2 = (User) session.get(User.class, 2);
         System.out.println(user2);
-
         //4.关闭会话
         session.close();
     }

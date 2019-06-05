@@ -57,8 +57,6 @@ public class testQBC {
         //执行查询
         System.out.println(executableCriteria.uniqueResult());
 
-        //session.getTransaction().begin();
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }

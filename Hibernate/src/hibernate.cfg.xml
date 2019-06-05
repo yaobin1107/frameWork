@@ -61,7 +61,7 @@
         <!--配置数据库方言：指定用哪种数据库语言
             mysql分页：limit
             oracle分页：rownum-->
-        <!--<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>-->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
         <!-- 2、配置JavaBean与表的映射文件 -->
         <mapping resource="cn/yb/hibernate/domain/User.hbm.xml"/>
@@ -76,7 +76,7 @@
             usage：缓存并发策略
             read-only：只读
         -->
-        <class-cache class="cn.yb.hibernate.domain.Customer" usage="read-only"/>
+        <class-cache class="cn.yb.hibernate.domain.Customer" usage="read-write"/>
         <class-cache class="cn.yb.hibernate.domain.Order" usage="read-only"/>
         <!--配置集合缓存-->
         <collection-cache collection="cn.yb.hibernate.domain.Customer.orders" usage="read-only"/>

@@ -58,7 +58,6 @@ public class testHQL {
     public void test3() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
 
         //count
         /*Query query = session.createQuery("select count(*) from Customer c");
@@ -69,8 +68,6 @@ public class testHQL {
         Query query = session.createQuery("select avg(c.id) from Customer c");
         Double avg = (Double) query.uniqueResult();
         System.out.println("客户表总记录数" + avg);
-
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -83,7 +80,6 @@ public class testHQL {
     public void test4() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
         Query query = session.createQuery("select o.customer,count (o.customer.id) from Order o group by o.customer");
         List<Object[]> list = query.list();
         for (Object[] o : list) {
@@ -91,7 +87,6 @@ public class testHQL {
                 System.out.println(o1);
             }
         }
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -103,12 +98,10 @@ public class testHQL {
     public void test5() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
         List<Object[]> list = session.createQuery("from Order,Customer ").list();
         for (Object[] o : list) {
             System.out.println(o[0] + ":" + o[1]);
         }
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -121,12 +114,10 @@ public class testHQL {
     public void test6() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
         List<Object[]> list = session.createQuery("from Order o,Customer c where o.customer=c").list();
         for (Object[] o : list) {
             System.out.println(o[0] + ":" + o[1]);
         }
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -141,12 +132,10 @@ public class testHQL {
     public void test7() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
         List<Object[]> list = session.createQuery("from Customer c inner join c.orders").list();
         for (Object[] o : list) {
             System.out.println(o[0] + ":" + o[1]);
         }
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -159,12 +148,10 @@ public class testHQL {
     public void test8() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
         List<Customer> list = session.createQuery("from Customer c inner join fetch c.orders").list();
         for (Customer o : list) {
             System.out.println(o.getName());
         }
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -179,12 +166,10 @@ public class testHQL {
     public void test9() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
         List<Object[]> list = session.createQuery("from Customer c left outer join c.orders").list();
         for (Object[] o : list) {
             System.out.println(o[0] + ":" + o[1]);
         }
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -196,12 +181,10 @@ public class testHQL {
     public void test10() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
         List<Customer> list = session.createQuery("from Customer c left outer join fetch c.orders").list();
         for (Customer customer : list) {
             System.out.println(customer);
         }
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -216,12 +199,10 @@ public class testHQL {
     public void test11() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
         List<Object[]> list = session.createQuery("from Customer c right outer join c.orders").list();
         for (Object[] o : list) {
             System.out.println(o[0] + ":" + o[1]);
         }
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }
@@ -235,7 +216,6 @@ public class testHQL {
     public void test12() {
         //1.创建session
         Session session = HibernateUtils.openSession();
-        //session.getTransaction().begin();
         /**
          * 获取xml中局部(class中)的hql
          * 要加包名加类名
@@ -249,7 +229,6 @@ public class testHQL {
         Query query2 = session.getNamedQuery("hql2");
         query2.setParameter(0, "姚斌");
         System.out.println(query2.uniqueResult());
-        //session.getTransaction().commit();
         //4.关闭会话
         session.close();
     }

@@ -7,13 +7,10 @@
         <id name="id" column="id">
             <generator class="native"></generator>
         </id>
-
         <!--版本控制配置：放在id和property之间-->
         <version name="version"/>
-
         <!--如果模型属性和数据库列名一样，column可以不用写-->
         <property name="name"/>
-
         <!--描述一对多关系
             key中column写的是外键
             one-to-many的class写的是多的一方
@@ -31,7 +28,6 @@
             <key column="customer_id"></key>
             <one-to-many class="cn.yb.hibernate.domain.Order"/>
         </set>
-
         <!--HQL写在类标签中【局部的】-->
         <query name="hql1">from Customer</query>
     </class>

@@ -34,6 +34,25 @@ public class testCache {
     }
 
     /**
+     * 清除指定对象缓存
+     */
+    @Test
+    public void test() {
+        //1.创建session
+        Session session = HibernateUtils.openSession();
+        //获取数据，通过get方法可以获取一个持久态对象
+        User user1 = (User) session.get(User.class, 2);
+        System.out.println(user1);
+        //清除指定对象缓存
+        session.evict(user1);
+        //session没有数据，查询数据库，两条select语句
+        User user2 = (User) session.get(User.class, 2);
+        System.out.println(user2);//user1和user2地址不一样
+        //4.关闭会话
+        session.close();
+    }
+
+    /**
      * 快照，相当于session的备份
      */
     @Test
@@ -62,14 +81,12 @@ public class testCache {
         //1.创建session
         Session session = HibernateUtils.openSession();
         session.getTransaction().begin();
-
         //获取数据，通过get方法可以获取一个持久态对象
         User user = (User) session.get(User.class, 2);
         user.setUsername("zhangsan");
         //强制刷新，让一级缓存数据与数据库一致
         session.flush();
         user.setUsername("王五");
-
         session.getTransaction().commit();
         /**
          * 本来应只有一条update语句，但是flush后，会有两条update语句
@@ -166,24 +183,18 @@ public class testCache {
         //1.创建session
         Session session1 = HibernateUtils.openSession();
         Session session2 = HibernateUtils.openSession();
-        //session.getTransaction().begin();
-
         //获取数据，默认放在一级缓存session缓存
         Customer customer = (Customer) session1.get(Customer.class, 1);
         System.out.println(customer);
         //清除缓存
         session1.clear();
-
         //在配置文件中配置了二级类缓存，session中清除后，会去类缓存中读取数据，所以只有一条select语句
         Customer customer2 = (Customer) session1.get(Customer.class, 1);
         System.out.println(customer2);
-
         //另一个session获取数据
         //在配置文件中配置了二级类缓存，session是同一个sessionFactory生产的，所以只有一条select语句
         Customer customer3 = (Customer) session2.get(Customer.class, 1);
         System.out.println(customer3);
-
-        //session.getTransaction().commit();
         session1.close();
         session2.close();
     }
@@ -197,18 +208,12 @@ public class testCache {
         //1.创建session
         Session session1 = HibernateUtils.openSession();
         Session session2 = HibernateUtils.openSession();
-        //session.getTransaction().begin();
-
         //获取数据，默认放在一级缓存session缓存
         Customer customer = (Customer) session1.get(Customer.class, 1);
         System.out.println(customer.getOrders());
-
         session1.clear();
-
         Customer customer2 = (Customer) session1.get(Customer.class, 1);
         System.out.println(customer2.getOrders());
-
-        //session.getTransaction().commit();
         session1.close();
         session2.close();
     }
@@ -221,27 +226,20 @@ public class testCache {
         //1.创建session
         Session session1 = HibernateUtils.openSession();
         Session session2 = HibernateUtils.openSession();
-        //session.getTransaction().begin();
-
         Query query1 = session1.createQuery("from Customer ");
         query1.setCacheable(true);//设置允许缓存
         System.out.println(query1.list());
 
         Query query2 = session2.createQuery("from Customer ");
+
         query2.setCacheable(true);//设置允许缓存
         System.out.println(query2.list());
-
-        //session.getTransaction().commit();
         session1.close();
         session2.close();
     }
 
     /**
      * 时间戳缓存：两次连续执行的操作相同时，不在查询数据库
-     * update
-     * update
-     * select
-     * 两次update只会执行一次update语句
      */
     @Test
     public void test11() {
@@ -249,7 +247,7 @@ public class testCache {
         Session session1 = HibernateUtils.openSession();
         session1.getTransaction().begin();
 
-        Customer customer = (Customer) session1.get(Customer.class,1);
+        Customer customer = (Customer) session1.get(Customer.class, 1);
         System.out.println(customer);
 
         session1.getTransaction().commit();
@@ -258,7 +256,7 @@ public class testCache {
 
         //另一个session获取数据
         Session session2 = HibernateUtils.openSession();
-        Customer customer2 = (Customer) session2.get(Customer.class,1);
+        Customer customer2 = (Customer) session2.get(Customer.class, 1);
         System.out.println(customer2);
 
         session2.close();

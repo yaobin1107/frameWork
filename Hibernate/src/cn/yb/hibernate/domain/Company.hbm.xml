@@ -8,7 +8,6 @@
             <generator class="native"></generator>
         </id>
         <property name="name"/>
-
         <!--一个公司只有一个地址-->
         <one-to-one name="address" class="cn.yb.hibernate.domain.Address"/>
     </class>

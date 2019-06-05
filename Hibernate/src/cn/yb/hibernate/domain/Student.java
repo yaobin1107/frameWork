@@ -6,6 +6,8 @@ import java.util.Set;
 public class Student {
     private Integer sid;
     private String name;
+    private Set<Course> courses = new HashSet<>();
+
 
     @Override
     public String toString() {
@@ -45,6 +47,4 @@ public class Student {
     public void setCourses(Set<Course> courses) {
         this.courses = courses;
     }
-
-    private Set<Course> courses = new HashSet<>();
 }

@@ -22,27 +22,22 @@ public class testManytoMany {
         //1.创建session
         Session session = HibernateUtils.openSession();
         session.getTransaction().begin();
-
         //创建两个学生
         Student student1 = new Student("王五");
         Student student2 = new Student("刘能");
-
         //创建两个课程
         Course course1 = new Course("数学");
         Course course2 = new Course("语文");
         Course course3 = new Course("英语");
-
         //绑定课程到学生
         student1.getCourses().add(course1);
         student1.getCourses().add(course2);
         student2.getCourses().add(course1);
         student2.getCourses().add(course2);
         student2.getCourses().add(course3);
-
         //保存
         session.save(student1);
         session.save(student2);
-
         session.getTransaction().commit();
         //4.关闭会话
         session.close();

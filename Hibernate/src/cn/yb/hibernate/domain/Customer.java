@@ -6,6 +6,12 @@ import java.util.Set;
 public class Customer {
     private Integer id;
     private String name;//客户名称
+    //一对多，一个客户有多个订单
+    private Set<Order> orders = new HashSet<Order>();
+
+    /*乐观锁版本字段，int类型*/
+    private Integer version;
+
 
     public Integer getVersion() {
         return version;
@@ -15,8 +21,6 @@ public class Customer {
         this.version = version;
     }
 
-    /*乐观锁版本字段，int类型*/
-    private Integer version;
 
     @Override
     public String toString() {
@@ -49,7 +53,4 @@ public class Customer {
     public void setOrders(Set<Order> orders) {
         this.orders = orders;
     }
-
-    //一对多，一个客户有多个订单
-    private Set<Order> orders = new HashSet<Order>();
 }

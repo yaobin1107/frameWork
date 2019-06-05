@@ -9,7 +9,6 @@
         </id>
         <!--如果模型属性和数据库列名一样，column可以不用写-->
         <property name="name"/>
-
         <!--
             set中table：中间表表明
             key中column：写中间表当前模型的外键名

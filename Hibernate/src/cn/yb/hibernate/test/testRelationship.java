@@ -75,7 +75,6 @@ public class testRelationship {
         //1.创建session
         Session session = HibernateUtils.openSession();
         session.getTransaction().begin();
-
         Customer customer = (Customer) session.get(Customer.class, 3);
         /**
          * 删除一对多:
@@ -86,7 +85,6 @@ public class testRelationship {
             order.setCustomer(null);
         }
         session.delete(customer);//没有外键关系后即可删除
-
         session.getTransaction().commit();
         //4.关闭会话
         session.close();
@@ -158,7 +156,6 @@ public class testRelationship {
         //1.创建session
         Session session = HibernateUtils.openSession();
         session.getTransaction().begin();
-
         Customer customer = (Customer) session.get(Customer.class, 9);
         /**
          * 级联孤儿删除：把客户的所有订单移除
@@ -173,7 +170,6 @@ public class testRelationship {
             iterator.next();//取到下一个元素
             iterator.remove();//移除取到的元素
         }
-
         session.getTransaction().commit();
         //4.关闭会话
         session.close();

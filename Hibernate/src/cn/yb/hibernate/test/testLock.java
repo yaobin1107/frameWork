@@ -70,7 +70,7 @@ public class testLock {
          * 悲观锁for update是mysql内部实现的
          */
         Customer customer = (Customer) session.get(Customer.class,1);
-        customer.setName("yaobin");
+        customer.setName("yaobin10");
 
         session.getTransaction().commit();
         session.close();
