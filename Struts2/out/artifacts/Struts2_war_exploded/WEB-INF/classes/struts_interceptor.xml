@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--配置开启开发模式：可以显示更详细的信息-->
+    <constant name="struts.devMode" value="true"></constant>
+
+    <package name="interceptor" extends="struts-default">
+        <!--声明拦截器-->
+        <interceptors>
+            <interceptor name="myInterceptor" class="cn.yb.struts.web.interceptor.MyInterceptor"/>
+            <interceptor name="myInterceptor2" class="cn.yb.struts.web.interceptor.MyInterceptor2"/>
+        </interceptors>
+        <action name="myInterceptor" class="cn.yb.struts.web.action.InterceptorAction" method="testMyInterceptor">
+            <!--配置拦截器
+                注意：如果在action配置了自定义拦截器，那么默认的拦截器就会失效-->
+            <interceptor-ref name="myInterceptor"/>
+            <interceptor-ref name="myInterceptor2"></interceptor-ref>
+            <result name="success">/interceptor.jsp</result>
+        </action>
+    </package>
+</struts>

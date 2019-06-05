@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--配置开启开发模式-->
+    <constant name="struts.devMode" value="true"></constant>
+
+    <!--用户的增删改查-->
+    <package name="tpf" namespace="/user" extends="struts-default">
+        <action name="add" class="cn.yb.struts.web.action.UserAction" method="add">
+            <result name="success">/user/add.jsp</result>
+        </action>
+        <action name="delete" class="cn.yb.struts.web.action.UserAction" method="delete">
+            <result name="success">/user/delete.jsp</result>
+        </action>
+        <action name="find" class="cn.yb.struts.web.action.UserAction" method="find">
+            <result name="success">/user/find.jsp</result>
+        </action>
+        <action name="update" class="cn.yb.struts.web.action.UserAction" method="update">
+            <result name="success">/user/update.jsp</result>
+        </action>
+
+        <!--动作访问之通配符
+            * ：一个* -->
+        <action name="*" class="cn.yb.struts.web.action.UserAction" method="{1}">
+            <result name="success">/user/{1}.jsp</result>
+        </action>
+    </package>
+    <package name="tpf2" extends="struts-default" namespace="/stu">
+        <!--两个* ：访问路径变为http://localhost/stu/add_Student -->
+        <action name="*_*" class="cn.yb.struts.web.action.StudentAction" method="{1}{2}">
+            <result name="success">/{2}/{1}.jsp</result>
+        </action>
+    </package>
+</struts>

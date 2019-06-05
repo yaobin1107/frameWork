@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--配置开启开发模式：可以显示更详细的信息-->
+    <constant name="struts.devMode" value="true"></constant>
+
+    <!--配置全局不使用struts样式-->
+    <!--<constant name="struts.ui.theme" value="simple"></constant>-->
+
+    <package name="bq" extends="struts-default">
+        <action name="bq" class="cn.yb.struts.web.action.Student_OGNLAction" method="list">
+            <result>/ognl.jsp</result>
+        </action>
+    </package>
+    <include file="struts-stuONGL.xml"></include>
+</struts>

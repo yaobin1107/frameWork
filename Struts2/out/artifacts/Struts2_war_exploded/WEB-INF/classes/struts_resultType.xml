@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--配置开启开发模式-->
+    <constant name="struts.devMode" value="true"></constant>
+    <!--配置Action
+        此时访问路径http://localhost/stu!addStudent 会调用其addStudent方法-->
+    <package name="resType" extends="struts-default" namespace="/res">
+        <action name="result" class="cn.yb.struts.web.action.ResultAction">
+            <!--result:结果,写返回的jsp页面
+                    name：逻辑视图的名称，对应着动作方法的返回值。不写默认值是success
+                    type：结果类型，指的就是用什么方式转到定义的页面。不写默认是dispatcher转发
+                        dispatcher：转发到一个页面(jsp)，默认值
+                        redirect：重定向到一个页面(jsp)
+                        chain：转发到另外一个action【同一个包或者不同包】
+                        redirectAction：重定向到另外一个action【同一个包或者不同包】-->
+            <result name="success" type="redirect">/success.jsp</result>
+        </action>
+        <action name="result2" class="cn.yb.struts.web.action.ResultAction02">
+            <!--重定向到另一个同包的action-->
+            <result name="success" type="redirectAction">result</result>
+            <!--转发到另一个同包的action-->
+            <!--<result name="success" type="chain" >result</result>-->
+        </action>
+    </package>
+
+    <package name="resType2" namespace="/res2" extends="struts-default">
+        <action name="result3" class="cn.yb.struts.web.action.ResultAction03">
+            <!--转发到另一个不同包的action-->
+            <!--<result name="success" type="chain">
+                &lt;!&ndash;依赖注入&ndash;&gt;
+                <param name="namespace">/res</param>
+                <param name="actionName">result2</param>
+            </result>-->
+            <!--重定向到另一个不同包的action-->
+            <result name="success" type="redirectAction">
+                <!--依赖注入-->
+                <param name="namespace">/res</param>
+                <param name="actionName">result2</param>
+            </result>
+        </action>
+    </package>
+</struts>

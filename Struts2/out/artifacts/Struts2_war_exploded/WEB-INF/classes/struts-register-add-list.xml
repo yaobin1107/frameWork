@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--配置开启开发模式：可以显示更详细的信息-->
+    <constant name="struts.devMode" value="true"></constant>
+
+    <package name="register" extends="struts-default">
+        <action name="register" class="cn.yb.struts.web.action.UserAction_Register" method="register">
+            <!--input:回显，出错后跳转到那个页面-->
+            <result name="input">/register2.jsp</result>
+        </action>
+        <action name="list" class="cn.yb.struts.web.action.UserAction_Register" method="list">
+            <!--input:回显，出错后跳转到那个页面-->
+            <result name="list">/register2.jsp</result>
+        </action>
+    </package>
+
+    <package name="add" extends="struts-default" namespace="/stu">
+        <action name="add" class="cn.yb.struts.web.action.StudentAction_Add" method="add">
+            <!--input:回显，出错后跳转到那个页面-->
+            <result name="input">/add.jsp</result>
+        </action>
+    </package>
+</struts>

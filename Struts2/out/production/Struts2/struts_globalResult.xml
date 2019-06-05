@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--配置开启开发模式-->
+    <constant name="struts.devMode" value="true"></constant>
+
+    <!--声明一个抽象包，可以被继承-->
+    <package name="myDefault" extends="struts-default" abstract="true">
+        <!--声明一个全局结果视图类型-->
+        <result-types>
+            <result-type name="captcha" class="cn.yb.struts.web.result.CAPTCHAResult"></result-type>
+        </result-types>
+    </package>
+
+    <package name="cap2" extends="myDefault" namespace="/cap2">
+        <action name="checkcode2">
+            <result type="captcha">
+                <param name="width">120</param>
+                <param name="height">30</param>
+            </result>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--修改Struts访问路径后缀-->
+    <!--<constant name="struts.action.extension" value="php"></constant>-->
+    <!--配置开启开发模式：可以显示更详细的信息-->
+    <constant name="struts.devMode" value="true"></constant>
+    <!--package:表示包
+             name:包名，在struts.xml文件不能有相同的包名,包名是惟一
+             extends:继承，固定struts-default
+             abstract:抽象包，用于被继承，一般在抽象包中不声明action
+             namespace：命名空间，访问路径，默认是空字符串
+                        访问路径=命名空间+动作名称【可用于模块划分】
+                        注意：namespace需要加"/"
+             namespace查找规则：例如访问路径为/user/hello
+                                访问/user/a/b/hello依然可以访问
+                                访问/a/b/user/hello不能访问
+                                他会先查找/user/a/b，没有的话查找/user/a，还没有的话查找/user
+                                倒着查找命名空间
+        action:动作
+             name:相当于Servlet的映射路径(@WebServlet)
+             class:处理请求的类,相当一个Servlet类
+             method:处理请求的方法
+             method的要求：public
+                           返回值：必须String
+                           没有参数
+        result:结果,写返回的jsp页面
+            name：逻辑视图的名称，对应着动作方法的返回值。默认值是success
+            type：结果类型，指的就是用什么方式转到定义的页面。默认是dispatcher转发 -->
+    <package name="base" extends="struts-default">
+        <!--修改默认动作类【了解】-->
+        <!--<default-class-ref class="cn.yb.struts.web.action.DefaultAction"></default-class-ref>
+            default-class-ref这个标签有顺序，应写在action的前面 -->
+        <action name="hello" class="cn.yb.struts.web.action.HelloAction" method="sayHello">
+            <result name="success">/success.jsp</result>
+        </action>
+        <!--没有配置method会默认执行重写Action接口的execute方法-->
+        <action name="hello2" class="cn.yb.struts.web.action.HelloAction2">
+            <result name="success">/success.jsp</result>
+        </action>
+        <!--没有配置method会默认执行其父类ActionSupport的execute方法-->
+        <action name="hello3" class="cn.yb.struts.web.action.HelloAction3">
+            <result name="success">/success.jsp</result>
+        </action>
+        <!--默认动作类：没有配置class也没有配置method，依然可以访问成功
+            在struts-default.xml中定义了默认动作类和方法
+            就是com.opensymphony.xwork2.ActionSupport 这个类 -->
+        <action name="hello4">
+            <result name="success">/success.jsp</result>
+        </action>
+    </package>
+</struts>
