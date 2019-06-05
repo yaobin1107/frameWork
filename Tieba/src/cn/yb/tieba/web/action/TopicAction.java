@@ -16,7 +16,6 @@ public class TopicAction extends ActionSupport implements ModelDriven<Topic> {
     private Topic topic = new Topic();
     private ITopicService topicService = new TopivServiceImpl();
     private List<Topic> topicList;
-
     /**
      * 返回话题列表界面
      */
@@ -29,14 +28,8 @@ public class TopicAction extends ActionSupport implements ModelDriven<Topic> {
         return "list";
     }
 
+    private String key;
     public String save() {
-        /**
-         * 保存话题
-         * dao
-         * service
-         * action
-         * jsp
-         */
         //表达数据封装
         //帖子的创建时间
         topic.setCreateDate(new Date());
@@ -44,19 +37,14 @@ public class TopicAction extends ActionSupport implements ModelDriven<Topic> {
         String remoteAddr = ServletActionContext.getRequest().getRemoteAddr();
         topic.setIpAddr(remoteAddr);
         System.out.println(topic);
-
         //调用service
         topicService.save(topic);
-
         //获取数据
         topicList = topicService.getAll(null);
         //存在ContextMap
         ActionContext.getContext().put("topicList", topicList);
-
         return "list";
     }
-
-    private String key;
 
     public void setKey(String key) {
         this.key = key;

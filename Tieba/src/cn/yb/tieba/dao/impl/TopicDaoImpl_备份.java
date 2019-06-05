@@ -26,22 +26,16 @@ public class TopicDaoImpl_备份 implements ITopicDao {
 
     @Override
     public List<Topic> getAll(String key) {
-
         Session session = HibernateUtils.openSession();
-
         Query query = null;
-
         if (StringUtils.isEmpty(key)) {
             query = session.createQuery("from Topic");
         } else {
             query = session.createQuery("from Topic where title like:like");
             query.setParameter("like", "%" + key + "%");
         }
-
         List<Topic> list = query.list();
-
         session.close();
-
         return list;
     }
 }
