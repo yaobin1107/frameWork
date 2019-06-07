@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--配置开启开发模式：可以显示更详细的信息-->
+    <constant name="struts.devMode" value="true"></constant>
+
+
+    <package name="login" extends="struts-default">
+        <!--声明拦截器-->
+        <interceptors>
+            <interceptor name="CheckLoginInterceptor"
+                         class="cn.yb.userlogin.web.interceptor.CheckLoginInterceptor2">
+                <!--设置拦截排除的方法-->
+                <!--<param name="excludeMethods">login</param>-->
+            </interceptor>
+            <!--声明一个拦截器分组-->
+            <interceptor-stack name="myDefaultStack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="CheckLoginInterceptor"/>
+            </interceptor-stack>
+        </interceptors>
+        <!--修Struts改默认的拦截器-->
+        <default-interceptor-ref name="myDefaultStack"/>
+        <!--配置全局结果视图-->
+        <global-results>
+            <result name="toLoginPage">/login.jsp</result>
+        </global-results>
+        <action name="login" class="cn.yb.userlogin.web.action.UserAction" method="login">
+            <interceptor-ref name="myDefaultStack">
+                <param name="CheckLoginInterceptor.excludeMethods">login</param>
+            </interceptor-ref>
+            <result name="success">/WEB-INF/main.jsp</result>
+        </action>
+        <action name="studentlist" class="cn.yb.userlogin.web.action.StudentAction" method="list">
+            <result name="success">/WEB-INF/stuList.jsp</result>
+        </action>
+        <action name="teacherlist" class="cn.yb.userlogin.web.action.TeacherAction" method="list">
+            <result name="success">/WEB-INF/teaList.jsp</result>
+        </action>
+    </package>
+</struts>
