@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--配置开启开发模式：可以显示更详细的信息-->
+    <constant name="struts.devMode" value="true"></constant>
+    <!--配置国际化-->
+    <constant name="struts.custom.i18n.resources" value="fileuploadmessage"/>
+    <!--配置文件上传大小-->
+    <constant name="struts.multipart.maxSize" value="10240"/>
+
+    <package name="upload" extends="struts-default">
+        <action name="upload" class="cn.yb.file.web.action.UploadAction" method="upload">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="input">/upload.jsp</result>
+        </action>
+    </package>
+</struts>
