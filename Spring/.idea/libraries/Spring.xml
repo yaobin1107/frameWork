@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Spring">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-aop-3.2.0.RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/com.springsource.org.aopalliance-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/junit-4.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/com.springsource.org.apache.commons.logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-beans-3.2.0.RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-context-3.2.0.RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-core-3.2.0.RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-expression-3.2.0.RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-aspects-3.2.0.RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/com.springsource.com.mchange.v2.c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/com.springsource.org.apache.commons.dbcp-1.2.2.osgi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/com.springsource.org.apache.commons.pool-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-tx-3.2.0.RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-jdbc-3.2.0.RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/mysql-connector-java-5.0.8-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-orm-3.2.0.RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring_jars/spring-test-3.2.0.RC2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

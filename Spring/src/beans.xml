@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置一个bean（对象）-->
+    <!--Spring内部创建对象的原理：
+        1.解析xml文件，获取类名，id，属性
+        2.通过反射，用类名创建对象
+        3.给创建的对象赋值
+    -->
+    <bean id="userService" class="cn.yb.spring.service.impl.UserServiceImpl">
+        <!--依赖注入：给模型里面的name属性赋值，调用属性的set方法-->
+        <property name="name" value="yb"/>
+    </bean>
+
+    <!--装配bean的三种方式，装配bean指的是在xml里面配置一个bean标签-->
+    <!--第一种方式：new 一个实现类-->
+    <bean id="userService1" class="cn.yb.spring.service.impl.UserServiceImpl"></bean>
+    <!--第二种方式：通过静态工厂方法
+        factory-method：创建的工厂类里面的对应方法
+    -->
+    <bean id="userService2" class="cn.yb.spring.service.UserServiceFactory" factory-method="createUserService"></bean>
+    <!--第三种方式：通过实例工厂方法-->
+    <!--1.创建实例 factory2 bean-->
+    <bean id="factory2" class="cn.yb.spring.service.UserServiceFactory2"/>
+    <!--2.引用实例工厂 factory2 调用工厂里的方法 createUserService -->
+    <bean id="userService3" factory-bean="factory2" factory-method="createUserService"/>
+</beans>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--bean的集合注入-->
+    <bean id="programmer" class="cn.yb.spring.model.Programmer">
+        <!--list数据注入-->
+        <property name="cars">
+            <list>
+                <value>ofo</value>
+                <value>摩拜</value>
+                <value>酷骑</value>
+                <value>宝马</value>
+            </list>
+        </property>
+        <!--set数据注入-->
+        <property name="pets">
+            <set>
+                <value>小黑</value>
+                <value>小红</value>
+                <value>小绿</value>
+                <value>小强</value>
+            </set>
+        </property>
+        <!--map数据注入-->
+        <property name="infos">
+            <map>
+                <entry key="name" value="yb"/>
+                <entry key="age" value="20"/>
+                <entry key="ip" value="192.168.1.1"/>
+            </map>
+        </property>
+        <!--properties数据注入-->
+        <property name="mysqlInfo">
+            <props>
+                <prop key="url">jdbc:mysql://localhost:3306/ssm?useUnicode=true&amp;characterEncoding=utf8</prop>
+                <prop key="driverClass">com.mysql.jdbc.Driver</prop>
+                <prop key="name">root</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+        <!--数组数据注入-->
+        <property name="members">
+            <array>
+                <value>哥哥</value>
+                <value>弟弟</value>
+                <value>姐姐</value>
+                <value>妹妹</value>
+            </array>
+        </property>
+    </bean>
+
+</beans>

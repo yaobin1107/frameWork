@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置 DBCP 的 dataSource-->
+    <!--<bean id="DBCP_dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql:///spring"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>-->
+    <!--配置 c3p0 的 dataSource-->
+    <bean id="c3p0_dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql:///spring"/>
+        <property name="user" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+    <!--配置JdbcTemplate对象-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="c3p0_dataSource"/>
+    </bean>
+    <!--配置Dao-->
+    <bean id="userDao" class="cn.yb.spring.dao.impl.UserDaoImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+    </bean>
+</beans>

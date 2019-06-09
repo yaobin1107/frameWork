@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--Spring表达式：
+         对<property>进行统一编程，所有的内容都使用value
+         <property name="" value="#{表达式}">
+            #{123}、#{'jack'}：数字、字符串
+            #{T(类).字段|方法}：静态方法或字段
+            #{beanId}：另一个bean引用
+            #{beanId.propName}：操作数据
+            #{beanId.toString()}：执行方法
+    -->
+    <!--创建一个地址对象-->
+    <bean id="address" class="cn.yb.spring.model.Address">
+        <property name="name" value="西安"/>
+    </bean>
+    <bean id="customer" class="cn.yb.spring.model.Customer">
+        <property name="name" value="#{'yb'.toUpperCase()}"/>
+        <!--Math.PI 调用静态方法-->
+        <!--<property name="pi" value="#{T(Math).PI}"/>-->
+        <property name="pi" value="#{T(java.lang.Math).PI}"/>
+        <!-- 一个对象引用另一个对象两种写法：
+            1.ref 引用： <property name="address" ref="address"/>
+            2.SpEl：#{beanId}：另一个bean引用↓ -->
+        <property name="address" value="#{address}"/>
+    </bean>
+</beans>

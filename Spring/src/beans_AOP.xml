@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--=====================Spring半自动编写代理===========================-->
+    <!--配置userService-->
+    <bean id="userService" class="cn.yb.spring.service.impl.UserServiceImpl"/>
+    <!--配置切面类对象-->
+    <bean id="myAspect_aop" class="cn.yb.spring.aspect.MyAspect_AOP"/>
+    <!--配置代理对象
+        默认情况下 Spring 的 AOP 生成的代理是 JDK 的 Proxy 实现的-->
+    <bean id="proxyService" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!--接口：如果是一个接口写 value，如果是多个接口用 List-->
+        <property name="interfaces" value="cn.yb.spring.service.IUserService"></property>
+        <!--目标对象-->
+        <property name="target" ref="userService"/>
+        <!--切面类：这里用value而不是ref-->
+        <property name="interceptorNames" value="myAspect_aop"/>
+        <!--配置使用cglib生成代理对象-->
+        <property name="optimize" value="true"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="c3p0_dataSource03" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql:///transer"/>
+        <property name="user" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+    <!--配置jdbc事务管理器-->
+    <bean id="txManager03" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="c3p0_dataSource03"/>
+    </bean>
+    <!--配置Dao-->
+    <bean id="accountDao03" class="cn.yb.spring.dao.impl.AccountDaoImpl">
+        <property name="dataSource" ref="c3p0_dataSource03"/>
+    </bean>
+    <!--配置Service-->
+    <bean id="accountService03" class="cn.yb.spring.service.impl.AccountServiceImpl03">
+        <property name="accountDao" ref="accountDao03"/>
+    </bean>
+    <!--配置工厂代理-->
+    <bean id="proxyService" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <!--接口-->
+        <property name="proxyInterfaces" value="cn.yb.spring.service.IAccountService"/>
+        <!--目标对象-->
+        <property name="target" ref="accountService03"/>
+        <!--切面对象：Spring做了就不用写了-->
+        <!--事务管理器-->
+        <property name="transactionManager" ref="txManager03"/>
+        <!--transactionAttributes:事务属性详情配置
+            key:写方法名
+            value:写事务配置 -->
+        <property name="transactionAttributes">
+            <props>
+                <prop key="transfer">PROPAGATION_REQUIRED,ISOLATION_DEFAULT</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

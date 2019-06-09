@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--=========================给对象属性赋值的几种方式：=============================-->
+    <!--1.通过构造方法注入属性值-->
+    <bean id="student" class="cn.yb.spring.model.Student">
+        <!--相当于调用了 public Student(String username, String password) 这个构造方法-->
+        <constructor-arg name="username" value="yb"></constructor-arg>
+        <constructor-arg name="password" value="123466"></constructor-arg>
+
+        <!--相当于调用了 public Student(String username, int age) 这个构造方法-->
+        <!--<constructor-arg name="username" value="yb"></constructor-arg>
+        <constructor-arg name="age" value="20"></constructor-arg>-->
+
+        <!--通过索引加类型，给构造方法赋值-->
+        <!--<constructor-arg index="0" value="yb" type="java.lang.String"></constructor-arg>
+        <constructor-arg index="1" value="20" type="int"></constructor-arg>-->
+
+    </bean>
+
+    <!--2.通过set方法注入属性值-->
+    <bean id="student" class="cn.yb.spring.model.Student">
+        <!--给 property 属性赋值，就相当于调用对象的ser方法-->
+        <property name="username" value="yb"/>
+        <property name="age" value="10"/>
+        <property name="password" value="123466"/>
+    </bean>
+
+    <!--3.通过 p 命名空间注入(了解)，需要提供set方法-->
+    <bean id="student" class="cn.yb.spring.model.Student" p:age="20" p:password="123460" p:username="yb"></bean>
+
+</beans>

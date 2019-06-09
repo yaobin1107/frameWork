@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/aop
+                            http://www.springframework.org/schema/aop/spring-aop.xsd
+                            http://www.springframework.org/schema/tx 
+                            http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <bean id="c3p0_dataSource04" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql:///transer"/>
+        <property name="user" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+    <!--配置事务管理器-->
+    <bean id="txManager04" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="c3p0_dataSource04"/>
+    </bean>
+    <!--配置Dao-->
+    <bean id="accountDao04" class="cn.yb.spring.dao.impl.AccountDaoImpl">
+        <property name="dataSource" ref="c3p0_dataSource04"/>
+    </bean>
+    <!--配置Service-->
+    <bean id="accountService04" class="cn.yb.spring.service.impl.AccountServiceImpl03">
+        <property name="accountDao" ref="accountDao04"/>
+    </bean>
+    <!--配置通知事务管理器-->
+    <tx:advice id="txAdvice" transaction-manager="txManager04">
+        <!--事务详情：传播行为 隔离详情-->
+        <tx:attributes>
+            <!--<tx:method name="transfer" isolation="DEFAULT" propagation="REQUIRED"/>-->
+            <!--传播行为 隔离详情可以不配置，但方法要配置-->
+            <tx:method name="transfer"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--使用Spring的aop标签来配置-->
+    <aop:config>
+        <!--通知事务与切入点关联-->
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* cn.yb.spring.service..*.*(..))"/>
+    </aop:config>
+</beans>
