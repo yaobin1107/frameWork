@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="mysqlTables" targetRuntime="MyBatis3">
+        <!--数据库配置-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/ssm"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <!--Java类型解析-->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!--模型生成包名-->
+        <javaModelGenerator targetPackage="cn.yb.mybatis.model" targetProject=".\src">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!--mybatis映射.xml-->
+        <sqlMapGenerator targetPackage="cn.yb.mybatis.mapper" targetProject=".\src">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!--mybatis的mapper接口生成的包路径-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.yb.mybatis.mapper" targetProject=".\src">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!--配置生成表的模型-->
+        <table tableName="items"/>
+        <table tableName="orderdetail" domainObjectName="OrderDetail"></table>
+        <table tableName="orders"/>
+        <table tableName="user"/>
+    </context>
+</generatorConfiguration>
