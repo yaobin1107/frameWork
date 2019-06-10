@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.yb.mybatis.mapper.UserMapper">
+
+    <!--配置缓存
+        type:使用哪种缓存，不写默认是mybatis自带的缓存技术 perpetualCache
+    -->
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"></cache>
+
+    <!--
+        flushCache：默认为true，也就是执行增删改会清空二级缓存
+                    设置为false，执行增删改不会清空二级缓存
+    -->
+    <insert id="save" parameterType="cn.yb.mybatis.model.User" flushCache="false">
+        insert into user (username,sex,birthday,address)
+        value (#{username},#{sex},#{birthday},#{address});
+    </insert>
+
+    <!--resultType里面可以写user，配置文件中已经配置了别名
+        useCache:是否使用二级缓存（默认为true，使用）
+    -->
+    <select id="findUserById" parameterType="int" resultType="user" >
+        select * from user where id = #{id}
+    </select>
+
+    <!--通过模型的包装类查询用户id为n的用户-->
+    <!--parameterType里面可以写 userQueryVO，配置文件中已经配置了别名-->
+    <select id="findUserByUserQueryVo" parameterType="userQueryVO" resultType="user">
+        select u.* from user u where u.id = #{user.id}
+    </select>
+
+    <!--通过Map查询数据-->
+    <select id="findUserByMap" parameterType="hashMap" resultType="user">
+        SELECT u.* FROM user u WHERE address LIKE '%${address}%' AND sex = #{sex}
+    </select>
+
+    <!--查询用户个数：返回结果类型为基本类型 int double string long -->
+    <select id="findUserCount" parameterType="userQueryVO" resultType="int">
+        SELECT count(*) FROM user WHERE sex = #{user.sex}
+    </select>
+
+    <!--设置返回数据为resultMap，type里面写的是模型（返回结果类型）
+        property：写模型里面的属性
+        column：查出来的对应的列名
+        注意：除了id有特殊标签外，其他都用result标签
+    -->
+    <resultMap id="userResultMap" type="user">
+        <id property="id" column="id_"></id>
+        <result property="username" column="username_"></result>
+        <result property="sex" column="sex_"></result>
+        <result property="birthday" column="birthday_"></result>
+        <result property="address" column="address_"></result>
+    </resultMap>
+    <!--此时返回结果要写 resultMap 值是上面配置的resultMap的id值-->
+    <select id="findUserByIdResultMap" parameterType="int" resultMap="userResultMap">
+        select id id_,username username_,sex sex_,birthday birthday_,address address_ from user where id = #{id}
+    </select>
+
+
+    <!--if和where的使用-->
+    <!--/*原来的sql语句：select * from user where sex = #{user.sex} and username like '%${user.username}%'*/-->
+    <select id="findUserList" parameterType="userQueryVO" resultType="user">
+        select * from user
+        <where>
+            <if test="user != null">
+                <if test="user.sex != null and user.sex != ''">
+                    sex = #{user.sex}
+                </if>
+                <if test="user.username != null and user.username != ''">
+                    and username like '%${user.username}%'
+                </if>
+            </if>
+        </where>
+    </select>
+
+    <!--查找多个id的用户数据 foreach 的使用-->
+    <!--sql片段-->
+    <sql id="select_user_by_ids">
+        <if test="ids != null and ids.size > 0">
+            <!--
+                collection：集合，写集合属性(要遍历的集合)
+                item：用于接收遍历结果的变量 for(Integer id : ids){...}
+                /*select * from user where id in (1,2,3)*/
+                open：拼接开始（where后面开始）" id in ( "
+                close：拼接结束  " ) "
+                separator：分隔符 " , "
+            -->
+            <foreach collection="ids" item="id" open="id in (" close=")" separator=",">
+                ${id}
+            </foreach>
+        </if>
+    </sql>
+    <select id="findUserByIds" parameterType="userQueryVO" resultType="user">
+        select * from user
+        <where>
+            <!--加入sql片段-->
+            <include refid="select_user_by_ids"/>
+        </where>
+    </select>
+
+    <!--参数是集合
+        如果参数是集合，parameterType可以写【java.util.List】 也可以写别名【list】
+        遍历或判断时都用list变量
+    -->
+    <select id="findUserByIds2" parameterType="java.util.List" resultType="user">
+        select * from user
+        <where>
+            <if test="list != null and list.size > 0">
+                <foreach collection="list" item="id" open="id in (" close=")" separator=",">
+                    ${id}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <!--=======================用户信息及用户购买的商品信息============================-->
+    <!--返回的 User 里面还有 List 集合，所以要用resultMap-->
+    <resultMap id="findUserAndOrderInfo_userResultMap" type="user">
+        <!--1.User属性匹配-->
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="address" column="address"/>
+        <!--2.匹配User里面的orderList属性(一对多用collection)-->
+        <collection property="orderList" ofType="orders">
+            <id property="id" column="order_id"/>
+            <result property="note" column="note"/>
+            <result property="number" column="number"/>
+            <result property="createtime" column="createtime"/>
+            <!--3.匹配Orders里面的orderDetails属性(一对多用collection)
+                orders里面有个集合，嵌套进去
+            -->
+            <collection property="orderDetails" ofType="orderDetail">
+                <id property="id" column="detail_id"/>
+                <result property="itemId" column="items_id"/>
+                <result property="itemNum" column="items_num"/>
+                <!--4.匹配orderDetail里面的items属性(一对一用association)
+                    orderDetail里面有模型，用association
+                -->
+                <association property="items" javaType="items">
+                    <id property="items_id" column="user_id"/>
+                    <result property="name" column="name"/>
+                    <result property="price" column="price"/>
+                    <result property="detail" column="detail"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+    <select id="findUserAndOrderInfo" resultMap="findUserAndOrderInfo_userResultMap">
+        SELECT
+            u.id,
+            u.username,
+            u.address,
+            o.id order_id,
+            o.number,
+            o.createtime,
+            o.note,
+            od.id detail_id,
+            od.items_id,
+            od.items_num,
+            it.name,
+            it.price,
+            it.detail
+        FROM
+            USER u,
+            orders o,
+            orderdetail od,
+            items it
+        WHERE o.user_id = u.id
+            AND o.id = od.orders_id
+            AND od.items_id = it.id
+    </select>
+</mapper>

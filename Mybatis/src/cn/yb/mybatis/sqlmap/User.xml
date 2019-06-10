@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+    <!--根据id查询user
+        id:标识符，要求在命名空间内唯一
+        parameterType:传入参数java类型（#{id}的类型）
+        resultType：查询结果返回的对应java类型（精确到类）
+        #{}：占位符
+        #{id}：该占位符等待接收的参数名称是id
+        注意：如果参数为简单类型时，#{}里面的参数名称可以是任意定义
+    -->
+    <select id="findUserById" parameterType="int" resultType="cn.yb.mybatis.model.User">
+        select * from user where id = #{id}
+    </select>
+
+    <!--
+		${}：表示拼接SQL字符串
+	 	${value}：表示要拼接的是简单类型参数。
+		注意：
+            1、如果参数为简单类型时，${}里面的参数名称必须为value
+            2、${}会引起SQL注入，一般情况下不推荐使用
+            3、但是有些场景必须使用${}，比如order by ${colname}，拼接字符串必须使用
+	-->
+    <select id="findUserByName" parameterType="String" resultType="cn.yb.mybatis.model.User">
+        select * from user where username like '%${value}%'
+    </select>
+
+    <!--插入数据
+        这里的占位写模型的属性
+    -->
+    <insert id="insertUser" parameterType="cn.yb.mybatis.model.User">
+        insert into user (username,sex,birthday,address)
+        value (#{username},#{sex},#{birthday},#{address});
+    </insert>
+
+    <!--删除数据-->
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id = #{id};
+    </delete>
+
+    <!--更新数据-->
+    <update id="updateUser" parameterType="cn.yb.mybatis.model.User">
+        update user set sex = #{sex},address = #{address}
+        where id = #{id};
+    </update>
+
+    <!--插入数据后自动返回主键id-->
+    <insert id="insertUser2" parameterType="cn.yb.mybatis.model.User">
+        <!--
+			[selectKey标签]：通过select查询来生成主键
+			[keyProperty]：指定存放生成主键的属性
+			[resultType]：生成主键所对应的Java类型
+			[order]：指定该查询主键SQL语句的执行顺序，相对于insert语句
+			[last_insert_id]：MySQL的函数，要配合insert语句一起使用 -->
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        <!-- 如果主键的值是通过MySQL自增机制生成的，那么我们此处不需要再显示的给ID赋值 -->
+        insert into user (username,sex,birthday,address)
+        value (#{username},#{sex},#{birthday},#{address});
+    </insert>
+
+    <!--插入数据后自动返回主键id,主键id为自增UUID-->
+    <insert id="insertUser3" parameterType="cn.yb.mybatis.model.User">
+        <selectKey keyProperty="id" resultType="String" order="BEFORE">
+            SELECT UUID()
+        </selectKey>
+        INSERT INTO USER (username,sex,birthday,address)
+        VALUES(#{username},#{sex},#{birthday},#{address})
+    </insert>
+
+</mapper>

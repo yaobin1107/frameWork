@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.yb.mybatis.mapper.OrdersMapper">
+    <select id="findOrderById" resultType="ordersExt" parameterType="int">
+        select
+            o.*,u.username,u.address
+        from
+            orders o,user u
+        where
+            o.user_id = u.id
+        and
+            o.id = #{id}
+    </select>
+
+    <!--================================一对一=====================================-->
+
+    <!--如果模型里面有模型，使用resultMap-->
+    <resultMap id="orderResultMap2" type="orders">
+        <!--往orders模型匹配数据-->
+        <id property="id" column="id"/>
+        <result property="note" column="note"/>
+        <result property="number" column="number"/>
+        <result property="createtime" column="createtime"/>
+        <!--往orders的user匹配数据(模型里面有模型，使用association匹配模型属性)
+            property:属性
+            javaType:模型
+        -->
+        <association property="user" javaType="user">
+            <id property="id" column="user_id"/>
+            <result property="username" column="username"/>
+            <result property="address" column="address"/>
+        </association>
+    </resultMap>
+    <select id="findOrderById2" resultMap="orderResultMap2" parameterType="int">
+        select
+            o.*,u.username,u.address
+        from
+            orders o,user u
+        where
+            o.user_id = u.id
+        and
+            o.id = #{id}
+    </select>
+
+    <!--===================================一对多===================================-->
+    <resultMap id="orderResultMap3" type="orders">
+        <!--往orders模型匹配数据-->
+        <id property="id" column="id"/>
+        <result property="note" column="note"/>
+        <result property="number" column="number"/>
+        <result property="createtime" column="createtime"/>
+        <!--往orders的user匹配数据(模型里面有模型，使用association匹配模型属性)
+            property:属性
+            javaType:模型
+            注意：模型里的类型用javaType
+        -->
+        <association property="user" javaType="user">
+            <id property="id" column="user_id"/>
+            <result property="username" column="username"/>
+            <result property="address" column="address"/>
+        </association>
+        <!--一对多：往orders的orderdetails匹配数据
+            注意：集合里面的类型使用ofType
+        -->
+        <collection property="orderDetails" ofType="orderDetail">
+            <id property="id" column="detail_id"/>
+            <result property="itemId" column="items_id"/>
+            <result property="itemNum" column="items_num"/>
+        </collection>
+    </resultMap>
+    <select id="findOrderById3" resultMap="orderResultMap3" parameterType="int">
+        SELECT
+          o.*,
+          u.username,
+          u.address,
+          od.id detail_id,
+          od.items_id,
+          od.items_num
+        FROM
+          orders o,
+          user u,
+          orderdetail od
+        WHERE o.user_id = u.id
+          AND o.id = od.orders_id
+          AND o.id = #{id}
+    </select>
+
+    <!--懒加载-->
+    <resultMap id="orderLazyLoadingResultMap" type="orders">
+        <id property="id" column="id"/>
+        <result property="note" column="note"/>
+        <result property="number" column="number"/>
+        <result property="createtime" column="createtime"/>
+        <!--配置查询
+            select：执行一条select语句（这里调用 UserMapper 的 findUserById 方法执行 select 语句）
+            column：执行这个方法需要的传入参数（此参数是执行sql后返回的列名，这里是执行 select * from orders 后返回的列名 user_id）
+        -->
+        <association property="user" select="cn.yb.mybatis.mapper.UserMapper.findUserById"
+                     column="user_id"></association>
+    </resultMap>
+    <select id="findOrderAndUserByLazyLoading" resultMap="orderLazyLoadingResultMap">
+        select * from orders;
+    </select>
+</mapper>

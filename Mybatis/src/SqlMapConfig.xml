@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--加载数据库配置文件-->
+    <properties resource="db.properties"></properties>
+
+    <settings>
+        <!--配置允许开启二级缓存-->
+        <setting name="cacheEnabled" value="true"/>
+        <!--配置允许懒加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
+
+    <!--配置别名-->
+    <typeAliases>
+        <!--第一种方式-->
+        <!--<typeAlias type="cn.yb.mybatis.model.User" alias="user"></typeAlias>-->
+        <!--第二种方式:指定包名，别名就是类名首字母小写-->
+        <package name="cn.yb.mybatis.model"></package>
+        <package name="cn.yb.mybatis.vo"/>
+    </typeAliases>
+
+    <!-- 配置mybatis的环境信息 -->
+    <environments default="development">
+        <environment id="development">
+            <!-- 配置JDBC事务控制，由mybatis进行管理 -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!-- 配置数据源，采用dbcp连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driverClass}"/>
+                <property name="url"
+                          value="${url}"/>
+                <property name="username" value="${name}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--告诉mybatis加载映射文件的位置-->
+    <mappers>
+        <!--第一种：相对于类路径-->
+        <mapper resource="cn/yb/mybatis/sqlmap/User.xml"></mapper>
+        <!--第二种：写类名(一定要有映射文件，而且映射文件名需要跟类名相同)
+            如果没有映射文件，那么在Mapper上要声明注解(一般不使用，不灵活)
+             注解的几种方式：
+                 1.@Insert("insert语句")
+                 2.@Update("update语句")
+                 3.@Select("select语句")
+                 4.@Delete("delete语句")
+           <mapper class="cn.yb.mybatis.mapper.UserMapper"></mapper>
+        -->
+        <!--第三种：Mapper所在写包名
+            注意：这种方式仅适用于Mapper代理
+         -->
+        <package name="cn.yb.mybatis.mapper"/>
+    </mappers>
+
+</configuration>
