@@ -6,29 +6,29 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("salary")
-public class SalaryController {
+@RequestMapping("department")
+public class DepartmentController {
 
     @Autowired
     private IUserService userService;
 
     @RequestMapping("manage")
     public String manage() {
-        return "salary/manage";
+        return "department/manage";
     }
 
     @RequestMapping("info")
     public String info() {
-        return "salary/info";
+        return "department/info";
     }
 
     @RequestMapping("update")
     public String update() {
-        return "salary/update";
+        return "department/update";
     }
 
     @RequestMapping("edit")
     public String edit() {
-        return "salary/edit";
+        return "department/edit";
     }
 }
