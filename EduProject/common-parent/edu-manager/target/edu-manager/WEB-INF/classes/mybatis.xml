@@ -1,0 +1,16 @@
+<!--
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    &lt;!&ndash; 别名配置 &ndash;&gt;
+    <typeAliases>
+        &lt;!&ndash; 批量配置别名：指定批量定义别名的类包，别名为类名（首字母大小写都可） &ndash;&gt;
+        <package name="cn.yb.edu.model"/>
+    </typeAliases>
+    <mappers>
+        &lt;!&ndash; 批量加载映射文件 &ndash;&gt;
+        <package name="cn.yb.edu.mapper"/>
+    </mappers>
+</configuration>-->
