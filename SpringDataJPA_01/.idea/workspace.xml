@@ -38,7 +38,6 @@
       <change afterPath="$PROJECT_DIR$/../SprigBoot_web/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SprigBoot_web/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SprigBoot_web/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/SprigBoot_web.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SprigBoot_web/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SprigBoot_web/src/main/java/cn/yb/web/TeacherController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SprigBoot_web/src/main/resources/application.properties" afterDir="false" />
@@ -149,14 +148,8 @@
       <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/resources/static/imgs/用户登陆案例图解.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/resources/templates/stu/list.ftl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/test/java/cn/yb/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/yb/dao/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/yb/domain/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/yb/testDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/yb/testJPQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/yb/testSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringDataJPA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cn/yb/testSpecification.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Struts2_FileUpload/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Struts2_UserLogin/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ActiveMQ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/workspace.xml" afterDir="false" />
@@ -185,6 +178,14 @@
       <change beforePath="$PROJECT_DIR$/../Spring/src/cn/yb/spring/aspect/MyAspect_AspectjByAnno.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/cn/yb/spring/aspect/MyAspect_AspectjByAnno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Spring/src/cn/yb/spring/dao/impl/UserDaoImpl_JdbcDaoSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/cn/yb/spring/dao/impl/UserDaoImpl_JdbcDaoSupport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Spring/src/cn/yb/spring/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/src/cn/yb/spring/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDataJPA_01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SprigBoot_web/SprigBoot_web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/yb/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/yb/dao/CustomerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/yb/testSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/yb/testSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/yb/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/yb/dao/CustomerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/yb/testSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cn/yb/testSQL.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Struts2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Struts2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Struts2_FileUpload/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Struts2_FileUpload/.idea/workspace.xml" afterDir="false" />
@@ -206,24 +207,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/yb/dao/CustomerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="1272">
+              <caret line="83" column="59" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#0#33#1" expanded="true" />
                 <element signature="e#0#49#1" expanded="true" />
                 <element signature="e#0#47#1" expanded="true" />
-                <element signature="e#0#26#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cn/yb/testSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
+            <state relative-caret-position="413">
+              <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cn/yb/testSpecification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="138" column="37" lean-forward="true" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1203#1793#0" expanded="true" />
+                <element signature="e#1792#1793#0" expanded="true" />
+                <element signature="e#2183#2847#0" expanded="true" />
+                <element signature="e#2846#2847#0" expanded="true" />
+                <element signature="e#3180#3543#0" expanded="true" />
+                <element signature="e#3542#3543#0" expanded="true" />
+                <element signature="e#3740#4103#0" expanded="true" />
+                <element signature="e#4102#4103#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/yb/domain/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+              <folding>
+                <element signature="e#1592#1593#0" expanded="true" />
+                <element signature="e#1625#1626#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -250,15 +283,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/yb/domain/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/yb/dao/aaa.java" />
         <option value="$PROJECT_DIR$/src/test/java/cn/yb/test.java" />
         <option value="$PROJECT_DIR$/src/test/java/cn/yb/testDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/cn/yb/testJPQL.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cn/yb/testSQL.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/yb/dao/CustomerDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cn/yb/testSQL.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/cn/yb/testSpecification.java" />
       </list>
     </option>
   </component>
@@ -275,8 +309,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="501" />
-    <option name="y" value="166" />
+    <option name="x" value="535" />
+    <option name="y" value="165" />
     <option name="width" value="1401" />
     <option name="height" value="880" />
   </component>
@@ -288,6 +322,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,21 +402,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yb" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SpringDataJPA_01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDataJPA_01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yb" type="462c0819:PsiDirectoryNode" />
-              <item name="testSQL" type="1a9f42e2:ClassTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,9 +440,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testSQL.testfindByCustName">
-    <configuration name="testJPQL.testFinNameAndId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringDataJPA_01" />
+  <component name="RunManager" selected="JUnit.testSpecification.testLimit">
+    <configuration name="testSpecification.testLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringDataJPA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.yb.*" />
@@ -425,15 +450,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.yb" />
-      <option name="MAIN_CLASS_NAME" value="cn.yb.testJPQL" />
-      <option name="METHOD_NAME" value="testFinNameAndId" />
+      <option name="MAIN_CLASS_NAME" value="cn.yb.testSpecification" />
+      <option name="METHOD_NAME" value="testLimit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testJPQL.testUpdateNameById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringDataJPA_01" />
+    <configuration name="testSpecification.testSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringDataJPA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.yb.*" />
@@ -441,15 +466,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.yb" />
-      <option name="MAIN_CLASS_NAME" value="cn.yb.testJPQL" />
-      <option name="METHOD_NAME" value="testUpdateNameById" />
+      <option name="MAIN_CLASS_NAME" value="cn.yb.testSpecification" />
+      <option name="METHOD_NAME" value="testSpec" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testSQL.findAllBySQL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringDataJPA_01" />
+    <configuration name="testSpecification.testSpecSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringDataJPA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.yb.*" />
@@ -457,15 +482,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.yb" />
-      <option name="MAIN_CLASS_NAME" value="cn.yb.testSQL" />
-      <option name="METHOD_NAME" value="findAllBySQL" />
+      <option name="MAIN_CLASS_NAME" value="cn.yb.testSpecification" />
+      <option name="METHOD_NAME" value="testSpecSort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testSQL.testfindAllBySQLCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringDataJPA_01" />
+    <configuration name="testSpecification.testSpecification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringDataJPA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.yb.*" />
@@ -473,15 +498,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.yb" />
-      <option name="MAIN_CLASS_NAME" value="cn.yb.testSQL" />
-      <option name="METHOD_NAME" value="testfindAllBySQLCondition" />
+      <option name="MAIN_CLASS_NAME" value="cn.yb.testSpecification" />
+      <option name="METHOD_NAME" value="testSpecification" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testSQL.testfindByCustName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringDataJPA_01" />
+    <configuration name="testSpecification.testSpecification2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringDataJPA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.yb.*" />
@@ -489,20 +514,67 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.yb" />
-      <option name="MAIN_CLASS_NAME" value="cn.yb.testSQL" />
-      <option name="METHOD_NAME" value="testfindByCustName" />
+      <option name="MAIN_CLASS_NAME" value="cn.yb.testSpecification" />
+      <option name="METHOD_NAME" value="testSpecification2" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="SpringDataJPA" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="SpringDataJPA" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testSQL.testfindByCustName" />
-        <item itemvalue="JUnit.testSQL.testfindAllBySQLCondition" />
-        <item itemvalue="JUnit.testSQL.findAllBySQL" />
-        <item itemvalue="JUnit.testJPQL.testUpdateNameById" />
-        <item itemvalue="JUnit.testJPQL.testFinNameAndId" />
+        <item itemvalue="JUnit.testSpecification.testLimit" />
+        <item itemvalue="JUnit.testSpecification.testSpecSort" />
+        <item itemvalue="JUnit.testSpecification.testSpec" />
+        <item itemvalue="JUnit.testSpecification.testSpecification2" />
+        <item itemvalue="JUnit.testSpecification.testSpecification" />
       </list>
     </recent_temporary>
   </component>
@@ -521,59 +593,74 @@
       <updated>1560954141618</updated>
       <workItem from="1560954148739" duration="1051000" />
       <workItem from="1561009997278" duration="12597000" />
+      <workItem from="1561081461949" duration="6453000" />
     </task>
+    <task id="LOCAL-00001" summary="SpringDataJPA">
+      <created>1561081518554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561081518554</updated>
+    </task>
+    <task id="LOCAL-00002" summary="SpringDataJPA">
+      <created>1561081593598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561081593598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testJPQL_testFinNameAndId - 2019.06.20 at 17h 34m 29s.xml">
-      <configuration name="testJPQL.testFinNameAndId" configurationId="JUnit" />
+    <history-entry file="testSQL_testfindByCustNameLike - 2019.06.21 at 09h 59m 24s.xml">
+      <configuration name="testSQL.testfindByCustNameLike" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testJPQL_testUpdateNameById - 2019.06.20 at 17h 40m 40s.xml">
-      <configuration name="testJPQL.testUpdateNameById" configurationId="JUnit" />
+    <history-entry file="testSQL_testfindByCustNameLikeAndCustIndustry - 2019.06.21 at 10h 10m 37s.xml">
+      <configuration name="testSQL.testfindByCustNameLikeAndCustIndustry" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testJPQL_testUpdateNameById - 2019.06.20 at 17h 41m 57s.xml">
-      <configuration name="testJPQL.testUpdateNameById" configurationId="JUnit" />
+    <history-entry file="testSpecification_testSpecification - 2019.06.21 at 10h 55m 41s.xml">
+      <configuration name="testSpecification.testSpecification" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testJPQL_testUpdateNameById - 2019.06.20 at 17h 45m 52s.xml">
-      <configuration name="testJPQL.testUpdateNameById" configurationId="JUnit" />
+    <history-entry file="testSpecification_testSpecification - 2019.06.21 at 10h 56m 23s.xml">
+      <configuration name="testSpecification.testSpecification" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testSQL_findAllBySQL - 2019.06.20 at 17h 59m 28s.xml">
-      <configuration name="testSQL.findAllBySQL" configurationId="JUnit" />
+    <history-entry file="testSpecification_testSpecification - 2019.06.21 at 10h 56m 42s.xml">
+      <configuration name="testSpecification.testSpecification" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testSQL_findAllBySQL - 2019.06.20 at 17h 59m 55s.xml">
-      <configuration name="testSQL.findAllBySQL" configurationId="JUnit" />
+    <history-entry file="testSpecification_testSpecification2 - 2019.06.21 at 11h 07m 19s.xml">
+      <configuration name="testSpecification.testSpecification2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testSQL_testfindAllBySQLCondition - 2019.06.20 at 18h 02m 47s.xml">
-      <configuration name="testSQL.testfindAllBySQLCondition" configurationId="JUnit" />
+    <history-entry file="testSpecification_testSpec - 2019.06.21 at 11h 15m 20s.xml">
+      <configuration name="testSpecification.testSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testSQL_testfindAllBySQLCondition - 2019.06.20 at 18h 03m 14s.xml">
-      <configuration name="testSQL.testfindAllBySQLCondition" configurationId="JUnit" />
+    <history-entry file="testSpecification_testSpecSort - 2019.06.21 at 11h 21m 33s.xml">
+      <configuration name="testSpecification.testSpecSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testSQL_testfindByCustName - 2019.06.20 at 18h 44m 36s.xml">
-      <configuration name="testSQL.testfindByCustName" configurationId="JUnit" />
+    <history-entry file="testSpecification_testLimit - 2019.06.21 at 11h 31m 49s.xml">
+      <configuration name="testSpecification.testLimit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testSQL_testfindByCustName - 2019.06.20 at 18h 45m 16s.xml">
-      <configuration name="testSQL.testfindByCustName" configurationId="JUnit" />
+    <history-entry file="testSpecification_testLimit - 2019.06.21 at 11h 34m 14s.xml">
+      <configuration name="testSpecification.testLimit" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13648000" />
+    <option name="totallyTimeSpent" value="20101000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="420" y="172" width="1401" height="880" extended-state="0" />
+    <frame x="535" y="165" width="1401" height="880" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21130551" visible="true" weight="0.20730798" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21130551" weight="0.17971663" />
       <window_info id="Structure" order="1" sideWeight="0.7886945" side_tool="true" weight="0.25652498" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32974428" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4010767" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31224763" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -584,6 +671,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -596,8 +684,8 @@
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17993875" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24948311" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.21130551" visible="true" weight="0.17971663" />
+      <window_info id="Structure" order="1" sideWeight="0.7886945" side_tool="true" weight="0.25652498" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -605,7 +693,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29475102" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -613,9 +701,10 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -630,6 +719,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SpringDataJPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringDataJPA" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.2.4.RELEASE/spring-orm-4.2.4.RELEASE.jar!/org/springframework/orm/jpa/JpaTransactionManager.class">
@@ -649,13 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="26" column="24" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
         </state>
       </provider>
     </entry>
@@ -687,43 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/yb/domain/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1500#1501#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
-            <element signature="e#1764#1765#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1832#1833#0" expanded="true" />
-            <element signature="e#1882#1883#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cn/yb/testDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -750,24 +799,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/yb/dao/CustomerDao.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#33#1" expanded="true" />
-            <element signature="e#0#49#1" expanded="true" />
-            <element signature="e#0#47#1" expanded="true" />
-            <element signature="e#0#26#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1606">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cn/yb/testSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
+        <state relative-caret-position="413">
+          <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/yb/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1272">
+          <caret line="83" column="59" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#33#1" expanded="true" />
+            <element signature="e#0#49#1" expanded="true" />
+            <element signature="e#0#47#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/yb/domain/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="e#1592#1593#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/yb/testSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="138" column="37" lean-forward="true" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1203#1793#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+            <element signature="e#2183#2847#0" expanded="true" />
+            <element signature="e#2846#2847#0" expanded="true" />
+            <element signature="e#3180#3543#0" expanded="true" />
+            <element signature="e#3542#3543#0" expanded="true" />
+            <element signature="e#3740#4103#0" expanded="true" />
+            <element signature="e#4102#4103#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

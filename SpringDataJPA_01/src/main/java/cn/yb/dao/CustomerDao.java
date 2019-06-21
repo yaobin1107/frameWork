@@ -66,11 +66,20 @@ public interface CustomerDao extends JpaRepository<Customer, Long>,
     /**
      * 方法命名规则查询
      * 有几个约定：
-     * ☛ findBy：查询，后面跟对象中的属性名称，首字母大写
+     * ☛ 1.findBy：查询，后面跟对象中的属性名称，首字母大写
      * 例如：findByCustName 根据客户名称查询
-     * ☛ 在SpringDataJPA运行阶段会根据方法名称进行解析：
+     * ☛ 在 SpringDataJPA 运行阶段会根据方法名称进行解析：
      * ☛ ☛ findBy解析为 from XXX（实体类）
      * ☛ ☛ 后面的属性名称解析为 where custName = (他自己将首字母变为小写)
+     * ☛2.findBy + 属性名称  + ”查询方式（like / isnull）“
+     * 例如：findByCustNameLike 根据客户名称模糊查询
+     * ☛3.多条件查询
+     * ☛findBy + 属性名称  + ”查询方式“ + ”多条件连接符（and / or）“ + + 属性名称  + ”查询方式“
      */
     public Customer findByCustName(String name);
+
+    public List<Customer> findByCustNameLike(String name);
+
+    //使用客户名称模糊匹配，客户行业精准匹配查询(参数顺序不能乱！)
+    public List<Customer> findByCustNameLikeAndCustIndustry(String name, String industry);
 }

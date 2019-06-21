@@ -40,10 +40,30 @@ public class testSQL {
 
     /**
      * 方法命名规则查询
+     * 根据客户名称查询
      */
     @Test
     public void testfindByCustName() {
         Customer customer = customerDao.findByCustName("姚斌");
         System.out.println(customer);
+    }
+
+    /**
+     * 根据客户名称模糊查询
+     */
+    @Test
+    public void testfindByCustNameLike() {
+        List<Customer> customers = customerDao.findByCustNameLike("%三");
+        for (Customer customer : customers) {
+            System.out.println(customer);
+        }
+    }
+
+    @Test
+    public void testfindByCustNameLikeAndCustIndustry() {
+        List<Customer> customers = customerDao.findByCustNameLikeAndCustIndustry("%三","IT");
+        for (Customer customer : customers) {
+            System.out.println(customer);
+        }
     }
 }
