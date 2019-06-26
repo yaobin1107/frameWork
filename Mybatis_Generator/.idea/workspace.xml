@@ -1,7 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efc3937e-8b19-458b-bade-33c598aeaa38" name="Default Changelist" comment="" />
+    <list default="true" id="efc3937e-8b19-458b-bade-33c598aeaa38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/ActiveMQ.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/lib/activemq-all-5.15.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/out/production/ActiveMQ/META-INF/ActiveMQ.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/out/production/ActiveMQ/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/src/cn/yb/p2p/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/src/cn/yb/p2p/MyMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/src/cn/yb/p2p/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/src/cn/yb/subscriber/Consumer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/src/cn/yb/subscriber/Consumer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ActiveMQ/src/cn/yb/subscriber/Producer_S.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/artifacts/edu_api_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/artifacts/edu_api_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/artifacts/edu_manager_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/artifacts/edu_manager_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_35.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_aop_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_beans_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_context_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_core_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_expression_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_orm_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_test_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_tx_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_web_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/CourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/DepartmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/EmployeeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/SalaryDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/SalaryDetailMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/CourseExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/EmployeeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/SalaryDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/SalaryDetailExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/StudentExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/Oracle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/lib/ojdbc14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/out/production/Oracle/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/out/production/Oracle/test/testOracle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/out/production/Oracle/utils/JDBCUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/src/test/testOracle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Oracle/src/utils/JDBCUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/Redis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/lib/commons-pool2-2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/lib/jedis-2.7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/lib/junit-4.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Redis/src/test/testCluster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/SprigBoot_web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/src/main/java/cn/yb/web/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/src/main/webapp/WEB-INF/view/teacher/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SprigBoot_web/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/SpringBoot_Mybatis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/main/java/cn/yb/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/main/java/cn/yb/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/main/java/cn/yb/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/main/java/cn/yb/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/main/java/cn/yb/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/main/java/cn/yb/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/main/java/cn/yb/web/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/main/java/cn/yb/web/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/src/test/java/cn/yb/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/target/classes/cn/yb/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/target/classes/cn/yb/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/target/classes/cn/yb/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/target/classes/cn/yb/service/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/target/classes/cn/yb/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/target/classes/cn/yb/web/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/target/classes/cn/yb/web/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis/target/test-classes/cn/yb/AppTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/SpringBoot_Mybatis_Freemark.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/java/cn/yb/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/java/cn/yb/dbconfig/DruidDBConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/java/cn/yb/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/java/cn/yb/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/java/cn/yb/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/java/cn/yb/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/java/cn/yb/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/java/cn/yb/web/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/java/cn/yb/web/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/static/imgs/Cookie响应原理.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/static/imgs/EL表达式获取值.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/static/imgs/Tomcat目录结构.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/static/imgs/request对象和response对象的原理.png.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/static/imgs/用户登陆案例图解.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/static/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/templates/stu/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/main/resources/templates/user/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_Mybatis_Freemark/src/test/java/cn/yb/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/SpringBoot_dataSource.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/aspect/WebLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/datasource/DataSource01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/datasource/DataSource01_备份.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/datasource/DataSource02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/datasource/DataSource02_备份.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/dbconfig/DBConfig1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/dbconfig/DBConfig2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/mybatis1/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/mybatis1/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/mybatis2/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/mybatis2/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/java/cn/yb/web/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_dataSource/src/test/java/cn/yb/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/SpringBoot_jar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/web/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/web/controller/HelloController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/web/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/web/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/java/cn/yb/web/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/resources/static/imgs/Cookie响应原理.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/resources/static/imgs/EL表达式获取值.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/resources/static/imgs/Tomcat目录结构.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/resources/static/imgs/request对象和response对象的原理.png.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/resources/static/imgs/用户登陆案例图解.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/main/resources/templates/stu/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot_jar/src/test/java/cn/yb/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Struts2_FileUpload/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Struts2_UserLogin/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EduProject/common-parent/edu-service/src/main/java/cn/yb/edu/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-service/src/main/java/cn/yb/edu/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FreeMark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FreeMark/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibernate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibernate/src/ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibernate/src/ehcache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mybatis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mybatis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mybatis_Generator/generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mybatis_Generator/generator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/mapper/ItemsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/mapper/ItemsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrderDetailMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrderDetailMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrdersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-dao/src/main/java/cn/yb/edu/mapper/CourseMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/model/Items.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/model/ItemsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/DepartmentExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/model/OrderDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/model/OrderDetailExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EduProject/common-parent/edu-model/src/main/java/cn/yb/edu/model/UserExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/model/Orders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/model/OrdersExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/yb/mybatis/model/UserExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Struts2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Struts2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Struts2_FileUpload/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Struts2_FileUpload/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Struts2_UserLogin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Struts2_UserLogin/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,18 +287,60 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/generator.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/yb/edu/model/Device.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/yb/edu/mapper/DeviceMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-704">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/generator.xml" />
         <option value="$PROJECT_DIR$/src/cn/yb/mybatis/mapper/ItemsMapper.java" />
+        <option value="$PROJECT_DIR$/src/generator.xml" />
       </list>
     </option>
   </component>
@@ -48,18 +350,18 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="459" />
-    <option name="y" value="195" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="433" />
+    <option name="y" value="123" />
     <option name="width" value="1450" />
     <option name="height" value="845" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -71,12 +373,33 @@
             <path>
               <item name="Mybatis_Generator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mybatis_Generator" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mybatis_Generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mybatis_Generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mybatis_Generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mybatis_Generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mybatis_Generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mybatis_Generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -139,44 +462,56 @@
       <option name="presentableId" value="Default" />
       <updated>1558330237296</updated>
       <workItem from="1558330240223" duration="4282000" />
+      <workItem from="1560134195417" duration="101000" />
+      <workItem from="1560256296438" duration="603000" />
+      <workItem from="1560399734337" duration="788000" />
     </task>
+    <task id="LOCAL-00001" summary="Mybatis_Generator">
+      <created>1560134256200</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560134256200</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4282000" />
+    <option name="totallyTimeSpent" value="5774000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="459" y="195" width="1450" height="845" extended-state="0" />
+    <frame x="433" y="123" width="1450" height="845" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.17697842" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.18345323" />
       <window_info id="Structure" order="1" sideWeight="0.50209206" side_tool="true" weight="0.24964029" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286517" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286517" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32768363" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997175" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" weight="0.3294964" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" weight="0.3294964" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964029" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3294964" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3294964" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -213,117 +548,68 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Mybatis_Generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mybatis_Generator" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/generator.xml">
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrderDetailMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrderDetailMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrdersMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrdersMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/UserMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/UserMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/Items.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/UserExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/Orders.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/OrdersExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/ItemsMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/ItemsMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/edu/model/Course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        <state relative-caret-position="-44">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrderDetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrderDetailMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrdersMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/edu/model/Device.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="-198">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/OrdersMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/UserMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/yb/edu/mapper/DeviceMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="-704">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/Items.java">
+    <entry file="file://$PROJECT_DIR$/src/generator.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3861">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/UserExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3375">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/model/OrdersExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="159" column="39" selection-start-line="159" selection-start-column="39" selection-end-line="159" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/ItemsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yb/mybatis/mapper/ItemsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1189" />
       </provider>
     </entry>
   </component>
